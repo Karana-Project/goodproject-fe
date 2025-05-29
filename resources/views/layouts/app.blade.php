@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@yield('title', 'Laravel')</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,7 +27,7 @@
       }
     </script>
 </head>
-<body class="font-poppins text-black bg-white">
+<body class="font-poppins text-black bg-blackPrimary text-whitePrimary">
 
 
   {{-- Navbar --}}
