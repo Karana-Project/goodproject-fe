@@ -25,30 +25,32 @@
 @section('content')
 <div class="relative mx-auto max-w-screen -mt-20 z-30 px-6">
   <div class="bg-whitePrimary rounded-3xl p-10 shadow-md">
-    <div class="flex flex-col md:flex-row items-start md:items-center">
+    
+  {{-- Why Choose Us --}}
+    <div class="flex flex-col md:flex-row items-center md:items-center text-center md:text-left">
       <!-- Judul -->
-      <h1 class="text-blackPrimary text-2xl md:text-4xl font-medium uppercase md:w-1/3">
+      <h1 class="text-blackPrimary text-3xl md:text-4xl font-medium uppercase w-full md:w-1/3 mb-8 md:mb-0">
         Why choose<br>us
       </h1>
 
         
       <!-- Statistik -->
-        <div class="flex flex-col sm:flex-row gap-6 md:gap-12 md:w-2/3 items-center justify-end">
+        <div class="flex flex-col sm:flex-row gap-6 md:gap-12 md:w-2/3 items-center justify-end w-full">
           <!-- Card 1 -->
-          <div class="border-l-0 sm:border-l sm:first:border-l-0 sm:border-blackPrimary">
-            <h2 class="text-blackPrimary text-2xl md:text-[48px] mb-2 font-semibold">500+</h2>
+          <div class="w-full pb-4 md:pb-0 border-b border-blackPrimary sm:border-b-0 sm:border-l sm:first:border-l-0 px-8">
+            <h2 class="text-blackPrimary text-5xl md:text-[48px] md:mb-2 font-semibold">500+</h2>
             <p class="text-blackSecondary text-sm md:text-base">Listed Post</p>
           </div>
 
           <!-- Card 2 -->
-          <div class="px-8 border-l-0 sm:border-l sm:first:border-l-0 sm:border-blackPrimary">
-            <h2 class="text-blackPrimary text-2xl md:text-[48px] mb-2 font-semibold">200+</h2>
+          <div class="w-full pb-4 md:pb-0 border-b border-blackPrimary sm:border-b-0 sm:border-l sm:first:border-l-0 px-8">
+            <h2 class="text-blackPrimary text-5xl md:text-[48px] md:mb-2 font-semibold">200+</h2>
             <p class="text-blackSecondary text-sm md:text-base">Happy Customers</p>
           </div>
 
           <!-- Card 3 -->
-          <div class="px-8 border-l-0 sm:border-l sm:first:border-l-0 sm:border-blackPrimary">
-            <h2 class="text-blackPrimary text-2xl md:text-[48px] mb-2 font-semibold">5+</h2>
+          <div class="w-full pb-4 md:pb-0 border-b border-blackPrimary sm:border-b-0 sm:border-l sm:first:border-l-0 px-8">
+            <h2 class="text-blackPrimary text-5xl md:text-[48px] md:mb-2 font-semibold">5+</h2>
             <p class="text-blackSecondary text-sm md:text-base">Years Experience</p>
           </div>
         </div>
@@ -60,9 +62,56 @@
           Good Cars menawarkan mobil bekas berkualitas dan mobil modifikasi yang siap digunakan, seluruh unit telah melalui proses inspeksi menyeluruh untuk memastikan kenyamanan, keamanan, dan performa optimal; tersedia berbagai metode pembayaran seperti cash, kredit, maupun tukar tambah, serta dilengkapi layanan towing untuk pengantaran langsung ke lokasi pelanggan, menjadikan proses pembelian mobil lebih praktis dan terpercaya.
         </p>
       </div>
+
+        {{-- Collections --}}
+<div class="w-full mt-20 px-4">
+  <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
+    <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">View Our<br>Collections</h2>
+      <x-button href="#Learn More" text="view all" color="text" padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
+  </div>
+  
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+<x-car-card
+      image="images/hero-images-1.jpg"
+      name="Porsche 911"
+      brand="Porsche"
+      year="2024"
+      km="6000"
+      transmission="Automatic"
+      seats="2"
+      price="2000000000"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    />
+    <x-car-card
+      image="images/hero-images-1.jpg"
+      name="Porsche 911"
+      brand="Porsche"
+      year="2024"
+      km="6000"
+      transmission="Automatic"
+      seats="2"
+      price="2000000000"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    />
+    <x-car-card
+      image="images/hero-images-1.jpg"
+      name="Porsche 911"
+      brand="Porsche"
+      year="2024"
+      km="6000"
+      transmission="Automatic"
+      seats="2"
+      price="2000000000"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    />
   </div>
 </div>
 
-  {{-- Koleksi --}}
+
+  </div>
+</div>
+
+
+  
   
 @endsection

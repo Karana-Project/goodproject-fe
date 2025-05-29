@@ -1,4 +1,4 @@
-<nav class="fixed top-0 left-0 w-full px-6 py-6 bg-transparent z-30">
+<nav class="fixed top-0 left-0 w-full px-6 py-6 bg-transparent z-40">
     <div class="mx-[18px] md:mx-[80px] flex items-center justify-between">
         <!-- Logo -->
         <div class="text-3xl italic font-bold font-helvetica tracking-wider text-whitePrimary">
