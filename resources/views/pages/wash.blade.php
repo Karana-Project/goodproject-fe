@@ -1,10 +1,6 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Good Wash</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+@extends('layouts.app')
+
+@section('title', 'Good Wash')
 <body class="bg-gray-100 text-gray-900">
   <!-- Section 1: Hero -->
   <section class="bg-cover bg-center text-white py-20 px-6 md:px-12" style="background-image: url('https://your-hero-image-url.jpg')">

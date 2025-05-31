@@ -1,3 +1,7 @@
+@extends('layouts.app')
+
+@section('title', 'Good Wash')
+
 <section class="bg-cover bg-center text-white py-24 px-6" style="background-image: url('/path-to-your-hero-image.jpg')">
     <div class="max-w-6xl mx-auto text-center">
       <h1 class="text-4xl md:text-5xl font-bold leading-tight">YOUR WINDOW INTO THE <br /> CAR SCENE</h1>

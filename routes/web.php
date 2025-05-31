@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/wash', function () {
     return view('pages.wash');
 });
+
+Route::get('/media', function () {
+    return view('pages.media');
+});
