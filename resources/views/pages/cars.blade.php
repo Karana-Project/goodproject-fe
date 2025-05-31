@@ -63,35 +63,19 @@
         </p>
       </div>
 
-    {{-- Collections --}}
-    <div class="w-full mt-20">
-      <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
-        <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">View Our<br>Collections</h2>
-          <x-button href="#Learn More" text="view all" color="text" padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <x-car-card
-          image="images/hero-images-1.jpg"
-          name="Porsche 911"
-          brand="Porsche"
-          year="2024"
-          km="6000"
-          transmission="Automatic"
-          seats="2"
-          price="2000000000"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
-        <x-car-card
-          image="images/hero-images-1.jpg"
-          name="Porsche 911"
-          brand="Porsche"
-          year="2024"
-          km="6000"
-          transmission="Automatic"
-          seats="2"
-          price="2000000000"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        />
+{{-- Collections --}}
+<div class="w-full mt-20 md:px-4">
+  <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
+    <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
+      View Our<br>Collections
+    </h2>
+    <x-button href="#Learn More" text="view all" color="text" padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
+  </div>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      @for ($i = 0; $i < 5; $i++)
+      <div class="swiper-slide">
         <x-car-card
           image="images/hero-images-1.jpg"
           name="Porsche 911"
@@ -104,7 +88,54 @@
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         />
       </div>
+      @endfor
     </div>
+
+<!-- Scrollbar dan Tombol di satu baris -->
+<div class="flex flex-row items-center justify-between mt-4 px-2 gap-4">
+  <!-- Scrollbar (full width sisa ruang) -->
+  <div class="swiper-scrollbar flex-1 h-2 bg-gray-200 rounded"></div>
+  <!-- Tombol navigasi -->
+  <div class="flex gap-3 shrink-0">
+    <div class="swiper-button-prev !static !relative text-black w-8 h-8 flex items-center justify-center bg-white rounded-full border"></div>
+    <div class="swiper-button-next !static !relative text-black w-8 h-8 flex items-center justify-center bg-white rounded-full border"></div>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+<!-- SwiperJS -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.mySwiper', {
+      slidesPerView: 1.2,
+      spaceBetween: 16,
+      grabCursor: true,
+      loop: false,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+        draggable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  });
+</script>
+
+
+
 
 
   </div>
