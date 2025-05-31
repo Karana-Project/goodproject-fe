@@ -63,49 +63,48 @@
         </p>
       </div>
 
-        {{-- Collections --}}
-<div class="w-full mt-20 px-4">
-  <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
-    <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">View Our<br>Collections</h2>
-      <x-button href="#Learn More" text="view all" color="text" padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
-  </div>
-  
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-<x-car-card
-      image="images/hero-images-1.jpg"
-      name="Porsche 911"
-      brand="Porsche"
-      year="2024"
-      km="6000"
-      transmission="Automatic"
-      seats="2"
-      price="2000000000"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    />
-    <x-car-card
-      image="images/hero-images-1.jpg"
-      name="Porsche 911"
-      brand="Porsche"
-      year="2024"
-      km="6000"
-      transmission="Automatic"
-      seats="2"
-      price="2000000000"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    />
-    <x-car-card
-      image="images/hero-images-1.jpg"
-      name="Porsche 911"
-      brand="Porsche"
-      year="2024"
-      km="6000"
-      transmission="Automatic"
-      seats="2"
-      price="2000000000"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    />
-  </div>
-</div>
+    {{-- Collections --}}
+    <div class="w-full mt-20">
+      <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
+        <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">View Our<br>Collections</h2>
+          <x-button href="#Learn More" text="view all" color="text" padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <x-car-card
+          image="images/hero-images-1.jpg"
+          name="Porsche 911"
+          brand="Porsche"
+          year="2024"
+          km="6000"
+          transmission="Automatic"
+          seats="2"
+          price="2000000000"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        />
+        <x-car-card
+          image="images/hero-images-1.jpg"
+          name="Porsche 911"
+          brand="Porsche"
+          year="2024"
+          km="6000"
+          transmission="Automatic"
+          seats="2"
+          price="2000000000"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        />
+        <x-car-card
+          image="images/hero-images-1.jpg"
+          name="Porsche 911"
+          brand="Porsche"
+          year="2024"
+          km="6000"
+          transmission="Automatic"
+          seats="2"
+          price="2000000000"
+          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        />
+      </div>
+    </div>
 
 
   </div>
