@@ -3,9 +3,13 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('pages.cars');
+    return view('welcome');
 });
 
 Route::get('/wash', function () {
     return view('pages.wash');
+});
+
+Route::get('/media', function () {
+    return view('pages.media');
 });
