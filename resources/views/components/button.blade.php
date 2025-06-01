@@ -21,7 +21,7 @@
     
     $colorClasses = match($color) {
         'primary' => 'bg-blackPrimary rounded-xl text-whitePrimary hover:bg-zinc-700',
-        'text' => 'bg-transparent rounded-xl text-blackPrimary',
+        'text' => 'bg-transparent rounded-xl text-blackPrimary hover:underline',
         'outline' => 'bg-transparent text-whitePrimary border border-whitePrimary rounded-xl hover:bg-whitePrimary hover:text-black',
         default => 'bg-blackPrimary rounded-xl text-whitePrimary hover:bg-zinc-700',
     };
