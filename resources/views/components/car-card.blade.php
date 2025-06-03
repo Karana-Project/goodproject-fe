@@ -1,4 +1,4 @@
-<div class="bg-white rounded-3xl shadow-md overflow-hidden max-w-xs mx-auto sm:max-w-full">
+<div class="bg-white rounded-3xl shadow-md overflow-hidden w-full mx-auto sm:max-w-full">
   <img src="{{ $image }}" alt="{{ $name }}" class="w-full h-48 object-cover rounded-t-lg">
   <div class="p-4">
     <h3 class="text-lg font-bold text-black uppercase">{{ $name }}</h3>
