@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('pages.cars');
 });
 
-Route::get('/wash', function () {
-    return view('pages.wash');
+Route::get('/carCollections', function () {
+    return view('pages.carsDetail.collections');
+});
+
+Route::get('/carDetail', function () {
+    return view('pages.carsDetail.carDetail');
 });

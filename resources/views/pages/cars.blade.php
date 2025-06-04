@@ -69,7 +69,7 @@
     <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
       View Our<br>Collections
     </h2>
-    <x-button href="#Learn More" text="view all" color="text" padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
+    <x-button href="/carCollections" text="view all" color="text" padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
   </div>
   <!-- Swiper -->
        <div class="relative">
@@ -100,10 +100,11 @@
             <div
               class="swiper-scrollbar collections-scrollbar flex-grow h-2 bg-gray-200 rounded-full"
               style="position: static; top: auto; left: auto; transform: none;"
-            ></div>
+            >
+            </div>
 
             {{-- Spacer (jarak antara scrollbar dan tombol) --}}
-            <div class="hidden md:w-14"></div>
+            <div class="hidden md:flex w-14"></div>
 
             {{-- Tombol navigasi: override posisi absolute Swiper --}}
             <div class="hidden md:flex items-center gap-4">
@@ -182,7 +183,7 @@
             ></div>
 
             {{-- Spacer (jarak antara scrollbar dan tombol) --}}
-            <div class="hidden md:w-14"></div>
+            <div class="hidden md:flex w-14"></div>
 
             {{-- Tombol navigasi: override posisi absolute Swiper --}}
             <div class="hidden md:flex items-center gap-4">
