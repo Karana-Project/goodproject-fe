@@ -15,7 +15,7 @@
             <!-- Menu Group -->
             <ul class="flex bg-[#292929] bg-opacity-60 rounded-full px-8 py-3 gap-14">
             <li>
-                <a href="#cars" class="text-white font-semibold underline underline-offset-4 decoration-2 decoration-white">
+                <a href="/" class="text-white font-semibold underline underline-offset-4 decoration-2 decoration-white">
                 Cars
                 </a>
             </li>
