@@ -16,7 +16,7 @@
             New Owners</h1>
           <p class="text-whitePrimary font-light text-lg md:text-xl mb-6">Buy and sell luxury vehicles with confidence and
             ease</p>
-          <x-button href="#Learn More" text="find now" color="outline"
+          <x-button href="/carCollections" text="find now" color="outline"
             padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
         </div>
       </div>
@@ -134,20 +134,30 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <!-- Card 1 -->
-          <div class="bg-whitePrimary rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-200">
-            <h3 class="text-blackPrimary text-xl font-bold uppercase mb-1">Find Your Dream Car</h3>
-            <p class="text-blackSecondary text-sm mb-14">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-            </p>
-            <x-button href="#Learn More" text="Buy Car Now" color="text" padding="" />
+          <div class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+            <div class="absolute inset-0 bg-cover bg-center"
+              style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="relative z-10 px-6 py-10">
+              <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">Find Your Dream Car</h3>
+              <p class="text-whiteSecondary text-sm mb-14">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <x-button href="/carCollections" text="Buy Car Now" color="text" padding="" class="text-white" />
+            </div>
           </div>
           <!-- Card 2 -->
-          <div class="bg-whitePrimary rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow duration-200">
-            <h3 class="text-blackPrimary text-xl font-bold uppercase mb-1">Sell or Trade Your Car</h3>
-            <p class="text-blackSecondary text-sm mb-14">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-            </p>
-            <x-button href="#Learn More" text="Sell or Trade now" color="text" padding="" />
+          <div class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+            <div class="absolute inset-0 bg-cover bg-center"
+              style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="relative z-10 px-6 py-10">
+              <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">Sell or Trade Your Car</h3>
+              <p class="text-whiteSecondary text-sm mb-14">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+              </p>
+              <x-button href="#Learn More" text="Sell or Trade Now" color="text" padding="" class="text-white" />
+            </div>
           </div>
         </div>
 
@@ -157,6 +167,8 @@
             <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
               Customer<br>reviews
             </h2>
+            <x-button href="/reviews" text="Write Review" color="text"
+              padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem] mt-4" />
           </div>
           <!-- Swiper -->
           <div class="relative">

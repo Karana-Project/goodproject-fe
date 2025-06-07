@@ -13,3 +13,7 @@ Route::get('/carCollections', function () {
 Route::get('/carDetail', function () {
     return view('pages.carsDetail.carDetail');
 });
+
+Route::get('/reviews', function () {
+    return view('pages.reviews');
+});

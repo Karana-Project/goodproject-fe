@@ -253,7 +253,7 @@
                   dolore magna aliqua..</p>
 
                 <x-button href="#Learn More" text="I’M READY TO BUY" color="primary" size="md"
-                  class="w-full justify-between"/>
+                  class="w-full justify-between" />
                 <div class="flex flex-row justify-between">
                   <p class="text-[8px] italic">*Price is negotiable</p>
                   <p class="text-[8px] italic">You will redirect to WhatsApp to contact with owner</p>
@@ -343,49 +343,49 @@
               Other<br>Collections
             </h2>
           </div>
-<div class="relative">
-          <!-- Swiper Container -->
-          <div class="swiper collectionsSwiper">
-            <div class="swiper-wrapper">
-              @for ($i = 0; $i < 5; $i++)
-                <div class="swiper-slide">
-                  <x-car-card image="images/hero-images-1.jpg" name="Porsche 911" brand="Porsche" year="2024"
-                    km="6000" transmission="Automatic" seats="2" price="2000000000"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
-                </div>
-              @endfor
+          <div class="relative">
+            <!-- Swiper Container -->
+            <div class="swiper collectionsSwiper">
+              <div class="swiper-wrapper">
+                @for ($i = 0; $i < 5; $i++)
+                  <div class="swiper-slide">
+                    <x-car-card image="images/hero-images-1.jpg" name="Porsche 911" brand="Porsche" year="2024"
+                      km="6000" transmission="Automatic" seats="2" price="2000000000"
+                      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+                  </div>
+                @endfor
+              </div>
+            </div>
+
+            <!-- Scrollbar + Navigation satu baris di bawah slide -->
+            <div class="flex items-center mt-6 px-2">
+              {{-- Scrollbar: override posisi absolute Swiper --}}
+              <div class="swiper-scrollbar collections-scrollbar flex-grow h-2 bg-gray-200 rounded-full"
+                style="position: static; top: auto; left: auto; transform: none;">
+              </div>
+
+              {{-- Spacer (jarak antara scrollbar dan tombol) --}}
+              <div class="hidden md:flex w-14"></div>
+
+              {{-- Tombol navigasi: override posisi absolute Swiper --}}
+              <div class="hidden md:flex items-center gap-4">
+                <button id="collections-prev"
+                  class="border rounded-xl px-4 py-2 bg-transparent border-blackPrimary transition transform duration-200 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="black" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                  </svg>
+                </button>
+                <button id="collections-next"
+                  class="border rounded-xl px-4 py-2 bg-transparent border-blackPrimary transition transform duration-200 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="black" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-
-          <!-- Scrollbar + Navigation satu baris di bawah slide -->
-          <div class="flex items-center mt-6 px-2">
-            {{-- Scrollbar: override posisi absolute Swiper --}}
-            <div class="swiper-scrollbar collections-scrollbar flex-grow h-2 bg-gray-200 rounded-full"
-              style="position: static; top: auto; left: auto; transform: none;">
-            </div>
-
-            {{-- Spacer (jarak antara scrollbar dan tombol) --}}
-            <div class="hidden md:flex w-14"></div>
-
-            {{-- Tombol navigasi: override posisi absolute Swiper --}}
-            <div class="hidden md:flex items-center gap-4">
-              <button id="collections-prev"
-                class="border rounded-xl px-4 py-2 bg-transparent border-blackPrimary transition transform duration-200 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="black" class="w-4 h-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
-                </svg>
-              </button>
-              <button id="collections-next"
-                class="border rounded-xl px-4 py-2 bg-transparent border-blackPrimary transition transform duration-200 hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="black" class="w-4 h-4">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
         </div>
 
         <div class="w-full mt-20 md:px-4">
@@ -394,7 +394,7 @@
               Customer<br>Reviews
             </h2>
           </div>
-<div class="relative">
+          <div class="relative">
             <!-- Swiper Container -->
             <div class="swiper reviewsSwiper">
               <div class="swiper-wrapper">
@@ -520,7 +520,7 @@
       </div>
 
 
-            <!-- SwiperJS -->
+      <!-- SwiperJS -->
       <script>
         document.addEventListener('DOMContentLoaded', function() {
           // Swiper untuk Collections
