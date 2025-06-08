@@ -12,10 +12,16 @@
         <div class="relative z-20 flex items-center h-full">
             <div class="w-full max-w-screen mx-[10px] md:mx-[80px] flex md:justify-end px-6 py-6">
                 <div class="text-center md:text-right w-full max-w-[1000px]">
-                    <h1 class="text-whitePrimary text-4xl md:text-6xl font-bold mb-2 md:mb-4 uppercase">Where Exceptional
-                        Cars Find New Owners</h1>
-                    <p class="text-whitePrimary font-light text-lg md:text-xl mb-6">Buy and sell luxury vehicles with
-                        confidence and ease</p>
+                    <h1 class="text-whitePrimary text-4xl md:text-6xl font-bold mb-2 md:mb-4 uppercase">Kembalikan Pesona
+                        Kendaraan Anda Bersama Good Wash
+
+                    </h1>
+                    <p class="text-whitePrimary font-light text-lg md:text-xl mb-6">Di Good Wash, kami percaya setiap
+                        kendaraan berhak mendapatkan perawatan terbaik. Tim profesional kami siap mengubah penampilan mobil
+                        dan motor Anda melalui layanan cuci, detailing, dan restorasi interior yang teliti. Kami hadir untuk
+                        memberikan hasil maksimal yang mengutamakan kenyamanan dan kepuasan Anda.
+
+                    </p>
                     <x-button href="#Learn More" text="find now" color="outline"
                         padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
                 </div>
@@ -34,9 +40,11 @@
                     <div>
                         <h2 class="text-4xl mb-4 text-black">CAR WASH, REDEFINED</h2>
                         <p class="text-black  text-sm leading-relaxed">
-                            Professional Car Wash | Detailing | Interior. Dikerjakan oleh tenaga ahli berpengalaman dengan
-                            hasil yang bersih, cepat, dan memuaskan. Tersedia paket reguler hingga detailing untuk kendaraan
-                            Anda.
+                            Good Wash adalah solusi perawatan kendaraan terpercaya yang menawarkan layanan cuci motor dan
+                            mobil dengan harga terjangkau dan hasil bersih maksimal. Kami hadir dengan berbagai paket cuci
+                            harian hingga detailing profesional untuk kendaraan Anda, semua dikerjakan oleh tim
+                            berpengalaman dengan hasil yang memuaskan. Butuh kilap seperti baru? Booking sekarang juga lewat
+                            WhatsApp dan rasakan langsung perbedaannya di Good Wash!
                         </p>
                     </div>
                     <div>
@@ -46,22 +54,20 @@
                 </div>
             </section>
 
-
             <!-- Excellence Section -->
             <section class=" py-16 px-6">
                 <div class="max-w-7xl mx-auto">
-                    <h3 class="text-4xl text-black mb-12 uppercase">Excellence in Every Wash</h3>
+                    <h3 class="text-4xl text-black mb-12 uppercase">Kualitas Terbaik di Setiap Layanan</h3>
                     <div class="grid md:grid-cols-3 gap-6">
 
                         <!-- Card 1 -->
                         <div class="rounded-xl overflow-hidden bg-black shadow-lg border-2 border-blue-400">
                             <img src="/images/wash1.png" class="w-full h-auto object-cover" />
                             <div class="text-white text-center px-6 py-6">
-                                <p class="text-xl font-extrabold mb-2">EXPERIENCED & TRUSTED</p>
+                                <p class="text-xl font-extrabold mb-2">BERPENGALAMAN & TERPERCAYA</p>
                                 <p class="text-sm leading-relaxed">
-                                    Handled by trained professionals with years of experience, ensuring careful and
-                                    consistent
-                                    results every time.
+                                    Dikerjakan oleh tim profesional berpengalaman untuk menjamin hasil yang teliti dan
+                                    konsisten setiap saat.
                                 </p>
                             </div>
                         </div>
@@ -70,10 +76,10 @@
                         <div class="rounded-xl overflow-hidden bg-black shadow-lg">
                             <img src="/images/wash2.png" class="w-full h-auto object-cover" />
                             <div class="text-white text-center px-6 py-6">
-                                <p class="text-xl font-extrabold mb-2">DETAILING QUALITY</p>
+                                <p class="text-xl font-extrabold mb-2">KUALITAS DETAILING PREMIUM</p>
                                 <p class="text-sm leading-relaxed">
-                                    We use high-end products and techniques to restore and protect your car’s exterior and
-                                    interior—down to the finest detail.
+                                    Kami menggunakan produk dan teknik terbaik untuk memulihkan serta melindungi eksterior
+                                    dan interior mobil Anda, hingga ke detail terkecil.
                                 </p>
                             </div>
                         </div>
@@ -82,11 +88,10 @@
                         <div class="rounded-xl overflow-hidden bg-black shadow-lg">
                             <img src="/images/wash3.png" class="w-full h-auto object-cover" />
                             <div class="text-white text-center px-6 py-6">
-                                <p class="text-xl font-extrabold mb-2">QUICK SERVICE</p>
+                                <p class="text-xl font-extrabold mb-2">PELAYANAN CEPAT & MUDAH</p>
                                 <p class="text-sm leading-relaxed">
-                                    Flexible scheduling, quick service, and a commitment to your satisfaction make every
-                                    visit
-                                    easy and worthwhile.
+                                    Jadwal fleksibel dan layanan cepat adalah komitmen kami untuk kepuasan Anda, menjadikan
+                                    setiap kunjungan lebih mudah dan berkesan.
                                 </p>
                             </div>
                         </div>
@@ -98,7 +103,7 @@
             <!-- Pricing Section -->
             <section class=" py-16 px-6">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-4xl text-black mb-12 uppercase">Car Wash Pricing</h2>
+                    <h2 class="text-4xl text-black mb-12 uppercase">Daftar Harga Layanan Cuci</h2>
                     <div class="grid md:grid-cols-2 gap-8">
                         <!-- CAR WASH -->
                         <div class="rounded-2xl overflow-hidden shadow-md border border-gray-200">
@@ -106,11 +111,9 @@
                                 <img src="/images/car-wash.png" alt="Car Wash" class="w-full h-full object-cover" />
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-6 flex flex-col justify-end">
-                                    <h3 class="text-white text-4xl font-bold">CAR WASH</h3>
-                                    <p class="text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit,
-                                        sed
-                                        do</p>
+                                    <h3 class="text-white text-4xl font-bold">CUCI MOBIL</h3>
+                                    <p class="text-white text-sm">Perawatan cuci standar untuk mengembalikan kilau mobil
+                                        Anda dan membersihkannya dari kotoran jalanan sehari-hari.</p>
                                 </div>
                             </div>
                             <div class="bg-gray-50 px-6 py-6">
@@ -138,7 +141,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <p class="text-sm text-gray-700 ">Additional Service</p>
+                                <p class="text-sm text-gray-700 ">ALayanan Tambahan</p>
                                 <p class="text-xl text-black">PREMIUM WASH & WAX <span
                                         class="text-xl text-red-600">+Rp.30.000</span></p>
                             </div>
@@ -150,11 +153,11 @@
                                 <img src="/images/moto-wash.png" alt="Moto Wash" class="w-full h-full object-cover" />
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-6 flex flex-col justify-end">
-                                    <h3 class="text-white text-4xl font-bold">MOTO WASH</h3>
-                                    <p class="text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit,
-                                        sed
-                                        do</p>
+                                    <h3 class="text-white text-4xl font-bold">CUCI MOTOR</h3>
+                                    <p class="text-white text-sm">Layanan cuci khusus untuk membersihkan setiap bagian
+                                        motor, dari bodi hingga area mesin yang sulit dijangkau.
+
+                                    </p>
                                 </div>
                             </div>
                             <div class="bg-gray-50 px-6 py-6">
@@ -182,7 +185,7 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                                <p class="text-sm text-gray-700 mb-1">Additional Service</p>
+                                <p class="text-sm text-gray-700 mb-1">Layanan Tambahan</p>
                                 <p class="text-xl text-black">SMALL ENGINE WAX <span class="text-red-600">+Rp.15.000</span>
                                 </p>
                                 <p class="text-xl  text-black">BIG ENGINE WAX <span class="text-red-600">+Rp.30.000</span>
@@ -196,7 +199,8 @@
             <!-- Detailing Section -->
             <section class="py-16 px-6">
                 <div class="max-w-7xl mx-auto">
-                    <h2 class="text-4xl text-black mb-12 uppercase">Detailing Pricing</h2>
+                    <h2 class="text-4xl text-black mb-12 uppercase">Harga Layanan Detailing
+                    </h2>
                     <div class="grid md:grid-cols-3 gap-8">
 
                         <!-- CAR AUTO DETAILING -->
@@ -206,11 +210,12 @@
                                     class="w-full h-full object-cover">
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4 flex flex-col justify-end">
-                                    <h3 class="text-white font-bold text-2xl ">CARS AUTODETAILING</h3>
-                                    <p class="text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit,
-                                        sed
-                                        do</p>
+                                    <h3 class="text-white font-bold text-2xl ">AUTO DETAILING MOBIL
+                                    </h3>
+                                    <p class="text-white text-sm">Perawatan lengkap untuk membersihkan dan meremajakan
+                                        eksterior serta interior mobil Anda.
+
+                                    </p>
                                 </div>
                             </div>
                             <div class="bg-white px-6 py-4">
@@ -244,11 +249,12 @@
                                     class="w-full h-full object-cover">
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4 flex flex-col justify-end">
-                                    <h3 class="text-white text-2xl font-bold">PREMIUM CARS POLES</h3>
-                                    <p class="text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit,
-                                        sed
-                                        do</p>
+                                    <h3 class="text-white text-2xl font-bold">POLES & COATING PREMIUM
+                                    </h3>
+                                    <p class="text-white text-sm">Memberikan lapisan pelindung premium untuk kilau maksimal
+                                        dan proteksi cat jangka panjang.
+
+                                    </p>
                                 </div>
                             </div>
                             <div class="bg-white px-6 py-4">
@@ -282,11 +288,12 @@
                                     class="w-full h-full object-cover">
                                 <div
                                     class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent p-4 flex flex-col justify-end">
-                                    <h3 class="text-white text-2xl font-bold">MOTO AUTODETAILING</h3>
-                                    <p class="text-white text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit,
-                                        sed
-                                        do</p>
+                                    <h3 class="text-white text-2xl font-bold">AUTO DETAILING MOTOR
+                                    </h3>
+                                    <p class="text-white text-sm">Perawatan detail untuk membersihkan dan melindungi setiap
+                                        komponen motor Anda secara menyeluruh.
+
+                                    </p>
                                 </div>
                             </div>
                             <div class="bg-white px-6 py-4">
@@ -320,8 +327,10 @@
                         <img src="/images/detailing-other.png" alt="Detailing" class="w-full h-80 object-cover">
                         <div class="absolute inset-0 bg-black/60 flex flex-col md:flex-row p-6 md:p-12">
                             <div class="md:w-1/2 text-white flex flex-col justify-end mb-6 md:mb-0">
-                                <h3 class="text-2xl font-bold uppercase">Detailing</h3>
-                                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                                <h3 class="text-2xl font-bold uppercase">Layanan Detailing Lainnya
+                                </h3>
+                                <p class="text-sm">Tersedia juga perawatan spesifik untuk kebutuhan khusus kendaraan Anda.
+                                </p>
                             </div>
                             <div class="md:w-1/2 bg-white bg-opacity-90 rounded-xl p-6">
                                 <table class="w-full text-sm text-black">
@@ -362,17 +371,21 @@
             <!-- Choose Your Car Care -->
             <section class="py-16 px-6">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-4xl text-black mb-4">CHOOSE YOUR CAR CARE</h2>
+                    <h2 class="text-4xl text-black mb-4">PILIH PERAWATAN MOBIL ANDA
+                    </h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="relative rounded-xl overflow-hidden shadow-md h-64 bg-cover bg-center"
                             style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?fit=crop&w=800&q=80');">
                             <div class="absolute inset-0 bg-black/50"></div> <!-- Overlay untuk kontras -->
                             <div class="relative z-10 p-4 text-white flex flex-col justify-end h-full">
-                                <h3 class="font-bold text-2xl">PREMIUM WASH</h3>
-                                <p class="text-white text-xs">Get your car cleaned with top-tier care using gentle,
-                                    pH-balanced products and spotless rinse techniques.</p>
+                                <h3 class="font-bold text-2xl">CUCI PREMIUM
+                                </h3>
+                                <p class="text-white text-xs">Mobil Anda akan dibersihkan dengan perawatan terbaik,
+                                    menggunakan produk lembut ber-pH seimbang untuk hasil bersih sempurna tanpa noda.
+
+                                </p>
                                 <a href="https://wa.me/628123456789"
-                                    class="mt-2 inline-block text-sm hover:underline">CONTACT NOW →</a>
+                                    class="mt-2 inline-block text-sm hover:underline">HUBUNGI SEKARANG →</a>
                             </div>
                         </div>
 
@@ -380,11 +393,14 @@
                             style="background-image: url('https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?fit=crop&w=800&q=80');">
                             <div class="absolute inset-0 bg-black/40"></div> <!-- Overlay gelap -->
                             <div class="relative z-10 p-4 text-white flex flex-col justify-end h-full">
-                                <h3 class="font-bold text-2xl">DETAILING SERVICE</h3>
-                                <p class="text-white text-xs">Thorough inside-out treatment including waxing, polishing,
-                                    and interior cleaning.</p>
+                                <h3 class="font-bold text-2xl">LAYANAN DETAILING
+                                </h3>
+                                <p class="text-white text-xs">Perawatan menyeluruh luar-dalam, termasuk waxing, poles, dan
+                                    pembersihan interior untuk hasil maksimal.
+
+                                </p>
                                 <a href="https://wa.me/628123456789"
-                                    class="mt-2 inline-block text-sm hover:underline">CONTACT NOW →</a>
+                                    class="mt-2 inline-block text-sm hover:underline">HUBUNGI SEKARANG →</a>
                             </div>
                         </div>
                     </div>
@@ -412,7 +428,7 @@
             <section class="w-full mt-20 md:px-4">
                 <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
                     <h2 class="text-white text-3xl md:text-4xl font-medium uppercase leading-tight">
-                        Customer<br>Reviews
+                        Ulasan<br>Pelanggan
                     </h2>
                 </div>
 
@@ -470,9 +486,9 @@
                     <div class="flex flex-col md:flex-row justify-between items-center">
                         <div class="md:w-1/2 mb-4 md:mb-0">
                             <h2 class="text-4xl text-black mb-2">GOOD CAR</h2>
-                            <p class="text-sm">Our trusted platform connects discerning buyers and sellers, offering a
-                                seamless
-                                experience. Let us ensure you get the best value for your car.</p>
+                            <p class="text-sm">Platform terpercaya kami menghubungkan para pembeli dan penjual yang cermat,
+                                menawarkan pengalaman transaksi yang mulus. Kami pastikan Anda mendapatkan nilai terbaik
+                                untuk mobil Anda.</p>
                         </div>
                         <div class="md:w-1/2">
                             <a href="/goodcar.html" class="block relative rounded-xl overflow-hidden">

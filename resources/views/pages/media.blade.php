@@ -12,10 +12,12 @@
         <div class="relative z-20 flex items-center h-full">
             <div class="w-full max-w-screen mx-[10px] md:mx-[80px] flex md:justify-end px-6 py-6">
                 <div class="text-center md:text-right w-full max-w-[1000px]">
-                    <h1 class="text-whitePrimary text-4xl md:text-6xl font-bold mb-2 md:mb-4 uppercase">Where Exceptional
-                        Cars Find New Owners</h1>
-                    <p class="text-whitePrimary font-light text-lg md:text-xl mb-6">Buy and sell luxury vehicles with
-                        confidence and ease</p>
+                    <h1 class="text-whitePrimary text-4xl md:text-6xl font-bold mb-2 md:mb-4 uppercase">Aksi Otomotif dalam
+                        Lensa Kreatif</h1>
+                    <p class="text-whitePrimary font-light text-lg md:text-xl mb-6">Good Media adalah platform kreatif yang
+                        menyajikan informasi seputar event mobil, video vlog otomotif, dan layanan video cinematic
+                        profesional. Ingin update dunia otomotif atau butuh dokumentasi cinematic untuk mobil atau event
+                        Anda? Good Media siap bantu wujudkannya!</p>
                     <x-button href="#Learn More" text="find now" color="outline"
                         padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
                 </div>
@@ -29,7 +31,7 @@
             <!-- THIS WEEK IN MOTION -->
             <section class="py-16 px-6">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-3xl text-black mb-6">THIS WEEK IN MOTION</h2>
+                    <h2 class="text-3xl text-black mb-6">Kilas Balik Bulan Ini</h2>
                     <div class="grid md:grid-cols-2 gap-6">
                         <!-- Large Left Card -->
                         <div class="relative rounded-xl overflow-hidden h-[300px] bg-black text-white p-6 flex flex-col justify-end"
@@ -60,7 +62,7 @@
             <!-- EVENT OF THE WEEK -->
             <section class=" py-16 px-6">
                 <div class="max-w-7xl mx-auto">
-                    <h2 class="text-4xl text-black mb-6 uppercase text-black">Event of the Month</h2>
+                    <h2 class="text-4xl text-black mb-6 uppercase text-black">Event Pilihan Bulan Ini</h2>
                     <div class="flex overflow-x-auto space-x-6 pb-4">
                         <!-- Card 1 -->
                         <a href="/event/mandalika-track-day"
@@ -162,7 +164,7 @@
             <!-- WATCH THE RIDE -->
             <section class="py-16 px-4">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-4xl text-black mb-6">WATCH THE RIDE</h2>
+                    <h2 class="text-4xl text-black mb-6">Tonton Videonya</h2>
                     <div class="grid md:grid-cols-2 gap-6">
                         <!-- Left Large Video -->
                         <div class="relative rounded-xl overflow-hidden">
@@ -200,20 +202,22 @@
             <!-- CAPTURE YOUR CAR IN MOTION -->
             <section class=" py-16 px-4">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-4xl text-black mb-6">CAPTURE YOUR CAR IN MOTION</h2>
+                    <h2 class="text-4xl text-black mb-6">Rekam Aksi Terbaik Mobilmu</h2>
                     <div class="grid md:grid-cols-2 gap-6">
                         <div class="bg-white p-4 rounded-xl shadow text-center">
                             <img src="/capture1.jpg" alt="Single Package" class="rounded mb-2" />
                             <h3 class="text-2xl text-black font-bold">SINGLE PACKAGE</h3>
-                            <p class="text-sm mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur...</p>
-                            <button class="mt-3 bg-black text-white px-4 py-2 rounded text-sm">CONTACT NOW</button>
+                            <p class="text-sm mt-2 text-gray-600">Sesi video sinematik eksklusif yang didedikasikan
+                                sepenuhnya untuk menampilkan keindahan dan detail mobil Anda.</p>
+                            <button class="mt-3 bg-black text-white px-4 py-2 rounded text-sm">HUBUNGI SEKARANG</button>
                         </div>
                         <div class="bg-white p-4 rounded-xl shadow text-center">
                             <img src="/capture2.jpg" alt="Group Package" class="rounded mb-2" />
                             <h3 class="text-2xl text-black font-bold">GROUP PACKAGE</h3>
 
-                            <p class="text-sm mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur...</p>
-                            <button class="mt-3 bg-black text-white px-4 py-2 rounded text-sm">CONTACT NOW</button>
+                            <p class="text-sm mt-2 text-gray-600">Ideal untuk klub mobil atau acara kumpul bersama. Kami
+                                abadikan setiap momen kebersamaan dan deretan mobil Anda secara epik.</p>
+                            <button class="mt-3 bg-black text-white px-4 py-2 rounded text-sm">HUBUNGI SEKARANG</button>
                         </div>
                     </div>
                 </div>
@@ -222,16 +226,17 @@
             <!-- COMPLETE CAR EXPERIENCE -->
             <section class=" py-16 px-4">
                 <div class="max-w-6xl mx-auto">
-                    <h2 class="text-4xl text-black mb-6">COMPLETE CAR EXPERIENCE: BUY OR CARE</h2>
+                    <h2 class="text-4xl text-black mb-6">Untuk Mobil Impian dan Perawatannya</h2>
                     <<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="relative rounded-xl overflow-hidden shadow-md h-64 bg-cover bg-center"
                             style="background-image: url('https://images.unsplash.com/photo-1552519507-da3b142c6e3d?fit=crop&w=800&q=80');">
                             <div class="absolute inset-0 bg-black/50"></div> <!-- Overlay untuk kontras -->
                             <div class="relative z-10 p-4 text-white flex flex-col justify-end h-full">
                                 <h3 class="font-bold text-2xl">GOOD CAR</h3>
-                                <p class="text-white text-xs">Buy and sell luxury vehicles with confidence and ease.</p>
+                                <p class="text-white text-xs">Jual beli kendaraan mewah dengan penuh keyakinan dan
+                                    kemudahan.</p>
                                 <a href="https://wa.me/628123456789"
-                                    class="mt-2 inline-block text-sm hover:underline">CONTACT NOW →</a>
+                                    class="mt-2 inline-block text-sm hover:underline">HUBUNGI SEKARANG →</a>
                             </div>
                         </div>
 
@@ -240,10 +245,10 @@
                             <div class="absolute inset-0 bg-black/40"></div> <!-- Overlay gelap -->
                             <div class="relative z-10 p-4 text-white flex flex-col justify-end h-full">
                                 <h3 class="font-bold text-2xl">GOOD WASH</h3>
-                                <p class="text-white text-xs">Premium Car Wash & Detailing Services to Keep Your Vehicle
-                                    Spotless.</p>
+                                <p class="text-white text-xs">Layanan cuci premium dan detailing untuk menjaga kendaraan
+                                    Anda selalu bersih berkilau.</p>
                                 <a href="https://wa.me/628123456789"
-                                    class="mt-2 inline-block text-sm hover:underline">CONTACT NOW →</a>
+                                    class="mt-2 inline-block text-sm hover:underline">HUBUNGI SEKARANG →</a>
                             </div>
                         </div>
                 </div>
