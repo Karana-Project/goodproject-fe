@@ -29,6 +29,7 @@
             whitePrimary: '#F1F1F1',
             blackSecondary: '#4E4E4E',
             whiteSecondary: '#D5D5D5',
+            redPrimary: '#A10000',
           }
         }
       }

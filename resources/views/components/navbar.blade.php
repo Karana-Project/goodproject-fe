@@ -26,12 +26,12 @@
           </a>
         </li>
         <li>
-          <a href="#wash" class="text-zinc-300 hover:text-white transition">
+          <a href="/wash" class="text-zinc-300 hover:text-white transition">
             Wash
           </a>
         </li>
         <li>
-          <a href="#media" class="text-zinc-300 hover:text-white transition">
+          <a href="/media" class="text-zinc-300 hover:text-white transition">
             Media
           </a>
         </li>

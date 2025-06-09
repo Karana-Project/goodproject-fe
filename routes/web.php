@@ -14,6 +14,14 @@ Route::get('/carDetail', function () {
     return view('pages.carsDetail.carDetail');
 });
 
+Route::get('/wash', function () {
+    return view('pages.wash');
+});
+
+Route::get('/media', function () {
+    return view('pages.media');
+});
+
 Route::get('/reviews', function () {
     return view('pages.reviews');
 });
