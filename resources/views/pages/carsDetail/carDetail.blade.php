@@ -445,75 +445,53 @@
           </div>
 
           <!-- Accordion Container -->
-          <div id="accordion-collapse" data-accordion="collapse" class="space-y-4">
-            <!-- Item 1 -->
-            <div class="rounded-xl shadow-md">
-              <h2 id="accordion-collapse-heading-1">
-                <button type="button"
-                  class="peer flex items-center justify-between w-full p-5 font-medium text-left border-b rounded-t-xl !bg-whitePrimary peer-aria-expanded:!bg-whiteSecondary !text-blackPrimary transition-all"
-                  data-accordion-target="#accordion-collapse-body-1" aria-expanded="false"
-                  aria-controls="accordion-collapse-body-1">
-                  <span>What is Flowbite?</span>
-                  <svg data-accordion-icon
-                    class="w-3 h-3 transform rotate-0 transition-transform duration-300 shrink-0 peer-aria-expanded:rotate-180"
-                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M9 5 5 1 1 5" />
-                  </svg>
-                </button>
-              </h2>
-              <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
-                <div class="p-5 border-t text-gray-600">
-                  Flowbite is an open-source library of interactive components built on top of Tailwind CSS.
-                </div>
+          <div class="space-y-4">
+            <!-- Accordion 1 -->
+            <div class="border rounded-xl shadow-md">
+              <button aria-expanded="false" aria-controls="panel1" id="accordion1" onclick="toggleAccordion(this)"
+                class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
+                What is Flowbite?
+                <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div id="panel1" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
+                aria-labelledby="accordion1">
+                Flowbite is an open-source library of interactive components built on top of Tailwind CSS.
               </div>
             </div>
 
-            <!-- Item 2 -->
-            <div class="rounded-xl shadow-md">
-              <h2 id="accordion-collapse-heading-2">
-                <button type="button"
-                  class="peer flex items-center justify-between w-full p-5 font-medium text-left border-b rounded-t-xl !bg-whitePrimary peer-aria-expanded:!bg-whiteSecondary !text-blackPrimary transition-all"
-                  data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
-                  aria-controls="accordion-collapse-body-2">
-                  <span>What is Flowbite?</span>
-                  <svg data-accordion-icon
-                    class="w-3 h-3 transform rotate-0 transition-transform duration-300 shrink-0 peer-aria-expanded:rotate-180"
-                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M9 5 5 1 1 5" />
-                  </svg>
-                </button>
-              </h2>
-              <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
-                <div class="p-5 border-t text-gray-600">
-                  Flowbite is an open-source library of interactive components built on top of Tailwind CSS.
-                </div>
+            <!-- Accordion 2 -->
+            <div class="border rounded-xl shadow-md">
+              <button aria-expanded="false" aria-controls="panel2" id="accordion2" onclick="toggleAccordion(this)"
+                class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
+                Why use Flowbite?
+                <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div id="panel2" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
+                aria-labelledby="accordion2">
+                It helps you build consistent UIs with accessible components.
               </div>
             </div>
 
-            <!-- Item 3 -->
-            <div class="rounded-xl shadow-md">
-              <h2 id="accordion-collapse-heading-3">
-                <button type="button"
-                  class="peer flex items-center justify-between w-full p-5 font-medium text-left border-b rounded-t-xl !bg-whitePrimary peer-aria-expanded:!bg-whiteSecondary !text-blackPrimary transition-all"
-                  data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
-                  aria-controls="accordion-collapse-body-3">
-                  <span>What is Flowbite?</span>
-                  <svg data-accordion-icon
-                    class="w-3 h-3 transform rotate-0 transition-transform duration-300 shrink-0 peer-aria-expanded:rotate-180"
-                    aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M9 5 5 1 1 5" />
-                  </svg>
-                </button>
-              </h2>
-              <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
-                <div class="p-5 border-t text-gray-600">
-                  Flowbite is an open-source library of interactive components built on top of Tailwind CSS.
-                </div>
+            <!-- Accordion 3 -->
+            <div class="border rounded-xl shadow-md">
+              <button aria-expanded="false" aria-controls="panel3" id="accordion3" onclick="toggleAccordion(this)"
+                class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
+                How to get started?
+                <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div id="panel3" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
+                aria-labelledby="accordion3">
+                You can get started by installing Tailwind CSS and Flowbite via npm or CDN.
               </div>
-
             </div>
           </div>
         </div>
@@ -573,6 +551,36 @@
             },
           });
         });
+
+        function toggleAccordion(clickedButton) {
+          const allButtons = document.querySelectorAll('button[aria-controls]');
+          allButtons.forEach(button => {
+            const panelId = button.getAttribute('aria-controls');
+            const panel = document.getElementById(panelId);
+            const svg = button.querySelector('svg');
+
+            if (button === clickedButton) {
+              // Toggle clicked button
+              const isExpanded = button.getAttribute('aria-expanded') === 'true';
+              if (isExpanded) {
+                // Close this
+                button.setAttribute('aria-expanded', 'false');
+                panel.classList.add('hidden');
+                svg.style.transform = 'rotate(0deg)';
+              } else {
+                // Open this
+                button.setAttribute('aria-expanded', 'true');
+                panel.classList.remove('hidden');
+                svg.style.transform = 'rotate(180deg)';
+              }
+            } else {
+              // Close all others
+              button.setAttribute('aria-expanded', 'false');
+              panel.classList.add('hidden');
+              svg.style.transform = 'rotate(0deg)';
+            }
+          });
+        }
       </script>
 
 

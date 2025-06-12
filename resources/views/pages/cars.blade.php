@@ -139,11 +139,14 @@
               style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative z-10 px-6 py-10">
-              <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">Find Your Dream Car</h3>
-              <p class="text-whiteSecondary text-sm mb-14">
+              <h3 class="text-whitePrimary text-xl font-bold text-center md:text-start uppercase mb-1">Find Your Dream Car
+              </h3>
+              <p class="text-whiteSecondary text-xs md:text-sm text-center md:text-start mb-14">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
               </p>
-              <x-button href="/carCollections" text="Buy Car Now" color="text" padding="" class="text-white" />
+              <div class="text-center md:text-start">
+                <x-button href="/carCollections" text="Buy Car Now" color="text" padding="" class="text-white" />
+              </div>
             </div>
           </div>
           <!-- Card 2 -->
@@ -152,11 +155,15 @@
               style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative z-10 px-6 py-10">
-              <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">Sell or Trade Your Car</h3>
-              <p class="text-whiteSecondary text-sm mb-14">
+              <h3 class="text-whitePrimary text-xl font-bold text-center md:text-start uppercase mb-1">Sell & Trade Your
+                Car</h3>
+              <p class="text-whiteSecondary text-xs md:text-sm text-center md:text-start mb-14">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
               </p>
-              <x-button href="#Learn More" text="Sell or Trade Now" color="text" padding="" class="text-white" />
+              <div class="text-center md:text-start">
+                <x-button href="#Learn More" text="Sell or Trade Now" color="text" padding=""
+                  class="text-white" />
+              </div>
             </div>
           </div>
         </div>
@@ -298,7 +305,7 @@
           <!-- Accordion 1 -->
           <div class="border rounded-xl shadow-md">
             <button aria-expanded="false" aria-controls="panel1" id="accordion1" onclick="toggleAccordion(this)"
-              class="flex justify-between items-center w-full p-5 text-blackPrimary font-semibold text-left bg-whitePrimary rounded-xl">
+              class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
               What is Flowbite?
               <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor">
@@ -314,7 +321,7 @@
           <!-- Accordion 2 -->
           <div class="border rounded-xl shadow-md">
             <button aria-expanded="false" aria-controls="panel2" id="accordion2" onclick="toggleAccordion(this)"
-              class="flex justify-between items-center w-full p-5 text-blackPrimary font-semibold text-left bg-whitePrimary rounded-xl">
+              class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
               Why use Flowbite?
               <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor">
@@ -330,7 +337,7 @@
           <!-- Accordion 3 -->
           <div class="border rounded-xl shadow-md">
             <button aria-expanded="false" aria-controls="panel3" id="accordion3" onclick="toggleAccordion(this)"
-              class="flex justify-between items-center w-full p-5 text-blackPrimary font-semibold text-left bg-whitePrimary rounded-xl">
+              class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
               How to get started?
               <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor">
@@ -343,7 +350,6 @@
             </div>
           </div>
         </div>
-
       </div>
 
 

@@ -55,7 +55,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                   </p>
                 </div>
-                <x-button href="/carCollections" text="read more" color="text" padding="" class="text-white" />
+                <x-button href="/mediaDetail" text="read more" color="text" padding="" class="text-white" />
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </p>
                   </div>
-                  <x-button href="/carCollections" text="read more" color="text" padding="" class="text-white" />
+                  <x-button href="/mediaDetail" text="read more" color="text" padding="" class="text-white" />
                 </div>
               </div>
             </div>
@@ -95,7 +95,7 @@
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </p>
                   </div>
-                  <x-button href="/carCollections" text="read more" color="text" padding="" class="text-white" />
+                  <x-button href="/mediaDetail" text="read more" color="text" padding="" class="text-white" />
                 </div>
               </div>
             </div>

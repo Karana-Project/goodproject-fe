@@ -25,3 +25,7 @@ Route::get('/media', function () {
 Route::get('/reviews', function () {
     return view('pages.reviews');
 });
+
+Route::get('/mediaDetail', function () {
+    return view('pages.mediaDetail.mediaDetail');
+});

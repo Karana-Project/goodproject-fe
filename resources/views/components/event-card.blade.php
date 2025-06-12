@@ -1,5 +1,5 @@
 <div class="bg-white rounded-3xl shadow-md overflow-hidden w-full mx-auto sm:max-w-full">
-  <a href="/eventDetail" class="block">
+  <a class="block">
     <img src="{{ $image }}" alt="{{ $name }}" class="w-full h-48 object-cover rounded-t-lg">
     <div class="p-4">
       <h3 class="text-lg font-bold text-black uppercase">{{ $name }}</h3>
@@ -48,7 +48,7 @@
       </div>
       <p class="text-gray-400 text-xs line-clamp-1 md:line-clamp-3">{{ $description }}</p>
       <div class="mt-3 md:mt-5 flex justify-center md:justify-between z-10">
-              <p class="text-blackPrimary uppercase">{{ $ticket }}</p>
+        <p class="text-blackPrimary uppercase">{{ $ticket }}</p>
         <x-button href="#Learn More" text="join now" color="primary" size="sm"
           class="w-full justify-between md:w-auto" />
       </div>

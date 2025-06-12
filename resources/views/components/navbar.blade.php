@@ -1,7 +1,7 @@
 <nav class="absolute top-0 left-0 w-full px-6 py-6 bg-transparent z-40">
   <div class="mx-[18px] md:mx-[80px] flex items-center justify-between">
     <!-- Logo -->
-    <a href="/" class="text-3xl italic font-bold font-helvetica tracking-wider text-whitePrimary">
+    <a href="/" class="logo-link text-3xl italic font-bold font-helvetica tracking-wider text-whitePrimary">
       GOOD
     </a>
 
@@ -62,8 +62,8 @@
       <ul class="flex flex-col gap-8">
         <li class="border-t border-gray-600 pt-8 mt-10"><a href="/"
             class="text-whitePrimary text-lg font-medium">Car</a></li>
-        <li><a href="#wash" class="text-whitePrimary text-lg font-medium">Wash</a></li>
-        <li><a href="#media" class="text-whitePrimary text-lg font-medium">Media</a></li>
+        <li><a href="/wash" class="text-whitePrimary text-lg font-medium">Wash</a></li>
+        <li><a href="/media" class="text-whitePrimary text-lg font-medium">Media</a></li>
         <li class="border-t border-gray-600 pt-8">
           <a href="#contact"
             class="w-full bg-whitePrimary text-blackPrimary rounded-full px-6 py-3 font-medium hover:bg-zinc-700 transition inline-block">
@@ -102,5 +102,19 @@
       mobileMenu.classList.add('translate-y-full');
       mobileMenu.classList.remove('translate-y-0');
     });
+  });
+
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll('nav a');
+
+  navLinks.forEach(link => {
+    if (link.classList.contains('logo-link')) return;
+    if (link.getAttribute('href') === currentPath) {
+      link.classList.add('underline', 'underline-offset-4', 'decoration-2', 'decoration-white', 'text-white',
+        'font-semibold');
+    } else {
+      link.classList.remove('underline', 'underline-offset-4', 'decoration-2', 'decoration-white', 'text-white',
+        'font-semibold');
+    }
   });
 </script>
