@@ -34,7 +34,7 @@
   <div class="relative mx-auto max-w-screen -mt-20 z-30 px-6">
     <div class="bg-whitePrimary rounded-3xl p-10 shadow-md">
 
-      <section class="w-full mt-20 md:px-4">
+      <section class="w-full mt-10 md:px-4">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
           <h2 class="text-blackPrimary text-3xl md:text-4xl font-medium uppercase leading-tight">
             This Month in<br>motion
@@ -48,7 +48,7 @@
               <div class="absolute inset-0 bg-cover bg-center"
                 style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
               <div class="absolute inset-0 bg-black/70"></div>
-              <div class="relative z-10 p-10 h-full flex flex-col justify-between">
+              <div class="relative z-10 p-8 md:p-10 h-full flex flex-col justify-between">
                 <div>
                   <h3 class="text-whitePrimary text-xl md:text-3xl font-bold uppercase">Find Your Dream Car</h3>
                   <p class="text-whiteSecondary text-sm mb-6">
@@ -70,7 +70,7 @@
                 <div class="absolute inset-0 bg-cover bg-center"
                   style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
                 <div class="absolute inset-0 bg-black/70"></div>
-                <div class="relative z-10 p-8 h-full flex flex-col justify-between">
+                <div class="relative z-10 p-6 md:p-8 h-full flex flex-col justify-between">
                   <div>
                     <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase">Find Your Dream Car</h3>
                     <p class="text-whiteSecondary text-2xs md:text-xs mb-6">
@@ -88,7 +88,7 @@
                 <div class="absolute inset-0 bg-cover bg-center"
                   style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
                 <div class="absolute inset-0 bg-black/70"></div>
-                <div class="relative z-10 p-8 h-full flex flex-col justify-between">
+                <div class="relative z-10 p-6 md:p-8 h-full flex flex-col justify-between">
                   <div>
                     <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase">Find Your Dream Car</h3>
                     <p class="text-whiteSecondary text-2xs md:text-xs mb-6">
@@ -220,7 +220,7 @@
                 amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="mt-3 md:mt-5 p-4 flex justify-center md:justify-between items-center z-10">
-              <p class="text-blackSecondary font-light text-xs">*Contact us for the price</p>
+              <p class="text-blackSecondary font-light text-2xs md:text-xs">*Contact us for the price</p>
               <x-button href="#Learn More" text="ask the price" color="primary" size="sm"
                 class="w-full justify-between md:w-auto" />
             </div>
@@ -237,7 +237,7 @@
                 amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
             <div class="mt-3 md:mt-5 p-4 flex justify-center md:justify-between items-center z-10">
-              <p class="text-blackSecondary font-light text-xs">*Contact us for the price</p>
+              <p class="text-blackSecondary font-light text-2xs md:text-xs">*Contact us for the price</p>
               <x-button href="#Learn More" text="ask the price" color="primary" size="sm"
                 class="w-full justify-between md:w-auto" />
             </div>
@@ -246,7 +246,7 @@
       </div>
 
       <!-- car & wash -->
-      <div class="w-full mt-20 md:px-4 mb-40">
+      <div class="w-full mt-20 md:px-4 mb-10">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
           <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
             Complete Car Experience:<br>Buy or Care

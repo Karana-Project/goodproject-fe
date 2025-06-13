@@ -1,6 +1,6 @@
-<footer class="bg-blackPrimary text-white px-6 py-10 mx-[18px] md:mx-[80px]">
+<footer class="bg-blackPrimary text-white px-6 py-10">
   <!-- Main Footer Section -->
-  <div class="max-w-7xl mx-auto flex flex-wrap gap-10 justify-between">
+  <div class="mx-[18px] md:mx-[80px] flex flex-wrap gap-10 justify-between">
     <!-- Brand -->
     <div class="flex-1 min-w-[220px]">
       <div class="text-3xl italic font-bold font-helvetica tracking-wider text-whitePrimary mb-4">
@@ -40,7 +40,7 @@
       </div>
 
       <!-- Updates & Social -->
-      <div class="flex-1 min-w-[220px] mt-6 md:mt-0">
+      <div class="flex-1 mt-6 md:mt-0">
         <h4 class="font-semibold mb-2">UPDATES</h4>
         <div class="flex mb-4">
           <input type="email" placeholder="Enter your email"

@@ -42,32 +42,58 @@
 
             <!-- Left side: Car image + thumbnails + specs -->
             <div class="md:col-span-3">
-
               <!-- Main car image -->
               <div class="relative w-full rounded-2xl overflow-hidden" style="padding-top: 56.25%;">
-                <img src="/images/hero-images-1.jpg" alt="Main car"
+                <img id="mainImage" src="/images/car-wash.jpg" alt="Main car"
                   class="absolute top-0 left-0 w-full h-full object-cover" />
               </div>
-
-              <!-- Thumbnails -->
-              <div class="flex gap-0 md:gap-4 mt-2 md:mt-4">
-
-                <div
-                  class="w-full max-w-xs rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer aspect-[16/9]">
-                  <img src="/images/car-wash.jpg" alt="Thumb 1" class="w-full h-full object-cover" />
+              <!-- Wrapper carousel -->
+              <div class="relative mt-4">
+                <!-- Left arrow -->
+                <button id="prevBtn"
+                  class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-whitePrimary text-blackPrimary px-4 py-2 rounded-xl shadow-md hidden md:block">
+                  &#8592;
+                </button>
+                <!-- Thumbnails container (mask viewport) -->
+                <div class="overflow-hidden">
+                  <!-- Thumbnails scrollable wrapper -->
+                  <div id="thumbnailCarousel"
+                    class="flex md:gap-4 overflow-x-auto scrollbar-hide px-1 md:px-0 scroll-smooth snap-x snap-mandatory">
+                    <!-- Repeatable Thumbnail Items -->
+                    <div
+                      class="thumb min-w-[33.3333%] max-w-[33.3333%] snap-start aspect-[16/9] rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer"
+                      data-src="/images/car-wash.jpg">
+                      <img src="/images/car-wash.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div
+                      class="thumb min-w-[33.3333%] max-w-[33.3333%] snap-start aspect-[16/9] rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer"
+                      data-src="/images/hero-images-1.jpg">
+                      <img src="/images/hero-images-1.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div
+                      class="thumb min-w-[33.3333%] max-w-[33.3333%] snap-start aspect-[16/9] rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer"
+                      data-src="/images/hero-images-1.jpg">
+                      <img src="/images/hero-images-1.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div
+                      class="thumb min-w-[33.3333%] max-w-[33.3333%] snap-start aspect-[16/9] rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer"
+                      data-src="/images/hero-images-1.jpg">
+                      <img src="/images/hero-images-1.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div
+                      class="thumb min-w-[33.3333%] max-w-[33.3333%] snap-start aspect-[16/9] rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer"
+                      data-src="/images/hero-images-1.jpg">
+                      <img src="/images/hero-images-1.jpg" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
                 </div>
-
-                <div
-                  class="w-full max-w-xs rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer aspect-[16/9]">
-                  <img src="/images/hero-images-1.jpg" alt="Thumb 2" class="w-full h-full object-cover" />
-                </div>
-
-                <div
-                  class="w-full max-w-xs rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer aspect-[16/9]">
-                  <img src="/images/hero-images-1.jpg" alt="Thumb 3" class="w-full h-full object-cover" />
-                </div>
-
+                <!-- Right arrow -->
+                <button id="nextBtn"
+                  class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-whitePrimary text-blackPrimary px-4 py-2 rounded-xl shadow-md hidden md:block">
+                  &#8594;
+                </button>
               </div>
+
 
               <!-- Car specs detail -->
               <div class="mt-8 bg-white p-6 rounded-2xl shadow">
@@ -124,8 +150,8 @@
                   </div>
                   <div class="flex items-center space-x-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
-                      fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                      class="lucide lucide-fuel-icon lucide-fuel size-6">
+                      fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                      stroke-linejoin="round" class="lucide lucide-fuel-icon lucide-fuel size-6">
                       <line x1="3" x2="15" y1="22" y2="22" />
                       <line x1="4" x2="14" y1="9" y2="9" />
                       <path d="M14 22V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v18" />
@@ -263,7 +289,7 @@
 
             <!-- Detail Sidebar -->
             <aside class="hidden md:block md:col-span-1">
-              <div class="sticky top-24 bg-white p-4 rounded-2xl shadow">
+              <div class="sticky top-8 bg-white p-4 rounded-2xl shadow">
                 <h2 class="text-xl text-blackPrimary font-bold uppercase">PORSCHE 911</h2>
                 <p
                   class="text-blackSecondary text-xs uppercase border-b border-whiteSecondary first:border-l-0 pb-3 mb-4">
@@ -581,6 +607,36 @@
             }
           });
         }
+
+        const carousel = document.getElementById('thumbnailCarousel');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const mainImage = document.getElementById('mainImage');
+        const thumbnails = document.querySelectorAll('#thumbnailCarousel .thumb');
+
+        const scrollAmount = carousel.offsetWidth / 3;
+
+        nextBtn.addEventListener('click', () => {
+          carousel.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+          });
+        });
+
+        prevBtn.addEventListener('click', () => {
+          carousel.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+          });
+        });
+
+        // Ganti gambar utama saat thumbnail diklik
+        thumbnails.forEach((thumb) => {
+          thumb.addEventListener('click', () => {
+            const newSrc = thumb.getAttribute('data-src');
+            mainImage.setAttribute('src', newSrc);
+          });
+        });
       </script>
 
 

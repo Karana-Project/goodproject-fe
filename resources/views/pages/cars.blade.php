@@ -293,7 +293,7 @@
       </div>
 
       <!-- Frequently Asked Questions -->
-      <div class="w-full mt-20 md:px-4 mb-40">
+      <div class="w-full mt-20 md:px-4 mb-10">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
           <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
             Frequently asked<br>questions

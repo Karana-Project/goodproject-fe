@@ -43,26 +43,54 @@
             <div class="md:col-span-3">
               <!-- Main car image -->
               <div class="relative w-full rounded-2xl overflow-hidden" style="padding-top: 56.25%;">
-                <img id="mainImage" src="" alt="Main car"
+                <img id="mainImage" src="/images/car-wash.jpg" alt="Main car"
                   class="absolute top-0 left-0 w-full h-full object-cover" />
               </div>
               <!-- Thumbnails -->
-              <div class="flex gap-0 md:gap-4 mt-2 md:mt-4">
-                <div
-                  class="thumb w-full max-w-xs rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer aspect-[16/9]"
-                  data-src="/images/car-wash.jpg">
-                  <img src="/images/car-wash.jpg" alt="Thumb 1" class="w-full h-full object-cover" />
+              <div class="relative mt-4">
+                <!-- Left arrow -->
+                <button id="prevBtn"
+                  class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-whitePrimary text-blackPrimary px-4 py-2 rounded-xl shadow-md hidden md:block">
+                  &#8592;
+                </button>
+                <!-- Thumbnails container (mask viewport) -->
+                <div class="overflow-hidden">
+                  <!-- Thumbnails scrollable wrapper -->
+                  <div id="thumbnailCarousel"
+                    class="flex md:gap-4 overflow-x-auto scrollbar-hide px-1 md:px-0 scroll-smooth snap-x snap-mandatory">
+                    <!-- Repeatable Thumbnail Items -->
+                    <div
+                      class="thumb min-w-[33.3333%] max-w-[33.3333%] snap-start aspect-[16/9] rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer"
+                      data-src="/images/car-wash.jpg">
+                      <img src="/images/car-wash.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div
+                      class="thumb min-w-[33.3333%] max-w-[33.3333%] snap-start aspect-[16/9] rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer"
+                      data-src="/images/hero-images-1.jpg">
+                      <img src="/images/hero-images-1.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div
+                      class="thumb min-w-[33.3333%] max-w-[33.3333%] snap-start aspect-[16/9] rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer"
+                      data-src="/images/hero-images-1.jpg">
+                      <img src="/images/hero-images-1.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div
+                      class="thumb min-w-[33.3333%] max-w-[33.3333%] snap-start aspect-[16/9] rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer"
+                      data-src="/images/hero-images-1.jpg">
+                      <img src="/images/hero-images-1.jpg" class="w-full h-full object-cover" />
+                    </div>
+                    <div
+                      class="thumb min-w-[33.3333%] max-w-[33.3333%] snap-start aspect-[16/9] rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer"
+                      data-src="/images/hero-images-1.jpg">
+                      <img src="/images/hero-images-1.jpg" class="w-full h-full object-cover" />
+                    </div>
+                  </div>
                 </div>
-                <div
-                  class="thumb w-full max-w-xs rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer aspect-[16/9]"
-                  data-src="/images/hero-images-1.jpg">
-                  <img src="/images/hero-images-1.jpg" alt="Thumb 2" class="w-full h-full object-cover" />
-                </div>
-                <div
-                  class="thumb w-full max-w-xs rounded-2xl overflow-hidden border-2 border-transparent hover:border-blackPrimary cursor-pointer aspect-[16/9]"
-                  data-src="/images/hero-images-1.jpg">
-                  <img src="/images/hero-images-1.jpg" alt="Thumb 3" class="w-full h-full object-cover" />
-                </div>
+                <!-- Right arrow -->
+                <button id="nextBtn"
+                  class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-whitePrimary text-blackPrimary px-4 py-2 rounded-xl shadow-md hidden md:block">
+                  &#8594;
+                </button>
               </div>
             </div>
 
@@ -137,53 +165,35 @@
       </div>
 
       <script>
+        const carousel = document.getElementById('thumbnailCarousel');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
         const mainImage = document.getElementById('mainImage');
-        const thumbnails = document.querySelectorAll('.thumb');
-        let currentIndex = 0;
-        let interval;
+        const thumbnails = document.querySelectorAll('#thumbnailCarousel .thumb');
 
-        function setMainImage(index) {
-          const newSrc = thumbnails[index].getAttribute('data-src');
+        const scrollAmount = carousel.offsetWidth / 3;
 
-          // Tambahkan efek fade
-          mainImage.classList.remove('opacity-100');
-          mainImage.classList.add('opacity-0');
-
-          setTimeout(() => {
-            mainImage.setAttribute('src', newSrc);
-            mainImage.classList.remove('opacity-0');
-            mainImage.classList.add('opacity-100');
-          }, 300);
-
-          thumbnails.forEach(t => t.classList.remove('border-blackPrimary'));
-          thumbnails[index].classList.add('border-blackPrimary');
-
-          currentIndex = index;
-        }
-
-        // Inisialisasi gambar pertama
-        if (thumbnails.length > 0) {
-          setMainImage(0);
-        }
-
-        // Event klik thumbnail
-        thumbnails.forEach((thumb, index) => {
-          thumb.addEventListener('click', () => {
-            clearInterval(interval); // reset auto-slide
-            setMainImage(index);
-            startAutoSlide(); // restart
+        nextBtn.addEventListener('click', () => {
+          carousel.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
           });
         });
 
-        // Auto-slide setiap 5 detik
-        function startAutoSlide() {
-          interval = setInterval(() => {
-            let nextIndex = (currentIndex + 1) % thumbnails.length;
-            setMainImage(nextIndex);
-          }, 5000);
-        }
+        prevBtn.addEventListener('click', () => {
+          carousel.scrollBy({
+            left: -scrollAmount,
+            behavior: 'smooth'
+          });
+        });
 
-        startAutoSlide();
+        // Ganti gambar utama saat thumbnail diklik
+        thumbnails.forEach((thumb) => {
+          thumb.addEventListener('click', () => {
+            const newSrc = thumb.getAttribute('data-src');
+            mainImage.setAttribute('src', newSrc);
+          });
+        });
       </script>
 
 

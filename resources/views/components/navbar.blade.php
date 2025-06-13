@@ -46,7 +46,7 @@
 
     <!-- Mobile Menu -->
     <div id="mobileMenu"
-      class="md:hidden fixed bottom-0 left-0 z-40 w-full h-screen bg-blackPrimary px-6 py-6 text-center rounded-t-xl
+      class="md:hidden fixed top-0 left-0 z-40 w-full h-full bg-blackPrimary px-6 py-6 text-center rounded-t-xl
     transform translate-y-full transition-transform duration-300 ease-in-out overflow-auto">
 
       <div id="closeMenu" class="absolute top-8 right-8 cursor-pointer text-whitePrimary mb-4">
@@ -87,12 +87,14 @@
     isOpen = true;
     mobileMenu.classList.add('translate-y-0');
     mobileMenu.classList.remove('translate-y-full');
+    document.body.classList.add('overflow-hidden');
   });
 
   closeMenu.addEventListener('click', () => {
     isOpen = false;
     mobileMenu.classList.add('translate-y-full');
     mobileMenu.classList.remove('translate-y-0');
+    document.body.classList.remove('overflow-hidden');
   });
 
   // Tutup menu saat link diklik
@@ -101,6 +103,7 @@
       isOpen = false;
       mobileMenu.classList.add('translate-y-full');
       mobileMenu.classList.remove('translate-y-0');
+      document.body.classList.remove('overflow-hidden');
     });
   });
 

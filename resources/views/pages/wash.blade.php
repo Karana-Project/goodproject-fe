@@ -31,11 +31,11 @@
 
 @section('content')
   <!-- Main Container for all sections except hero and footer -->
-  <div class="relative mx-auto max-w-screen -mt-20 z-30 px-6">
+  <div class="relative mx-auto max-w-screen -mt-10 z-30 px-6">
     <div class="bg-whitePrimary rounded-3xl p-10 shadow-md">
 
       <!-- Redefined Section -->
-      <section class="w-full mt-20 md:px-4">
+      <section class="w-full mt-10 md:px-4">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
           <h2 class="text-blackPrimary text-3xl md:text-4xl font-medium uppercase leading-tight">
             Good<br>wash
@@ -607,7 +607,7 @@
         </div>
 
         <!-- Frequently Asked Questions -->
-        <div class="w-full mt-20 md:px-4 mb-40">
+        <div class="w-full mt-20 md:px-4 mb-10">
           <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
             <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
               Frequently asked<br>questions

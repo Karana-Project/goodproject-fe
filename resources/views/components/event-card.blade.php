@@ -34,7 +34,7 @@
                 d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712" />
             </svg>
           </div>
-          <div class="leading-snug max-w-[150px]"
+          <div class="leading-snug max-w-auto md:max-w-[150px]"
             style="
       display: -webkit-box;
       -webkit-line-clamp: 3;
@@ -49,7 +49,7 @@
       <p class="text-gray-400 text-xs line-clamp-1 md:line-clamp-3">{{ $description }}</p>
       <div class="mt-3 md:mt-5 flex justify-center md:justify-between z-10">
         <p class="text-blackPrimary uppercase">{{ $ticket }}</p>
-        <x-button href="#Learn More" text="join now" color="primary" size="sm"
+        <x-button href="#Learn More" text="join now" color="primary" size="sm "
           class="w-full justify-between md:w-auto" />
       </div>
     </div>
