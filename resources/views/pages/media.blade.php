@@ -4,17 +4,23 @@
 
 @section('hero')
   <section class="h-screen w-full bg-cover bg-center flex items-center justify-end"
-    style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');">
-    <div class="absolute inset-0 bg-black/70 md:bg-black/50 z-10"></div>
-    <div div class="hidden md:block absolute inset-0 bg-gradient-to-l from-black/60 to-transparent z-20"></div>
-    <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-blackPrimary z-30"></div>
+    style="background-image: url('{{ asset('images/HERO-IMAGES-03.jpg') }}');">
+    <div class="absolute inset-0 bg-black/70 md:bg-black/40 z-10"></div>
+    <!-- Gradient bawah -->
+    <div
+      class="absolute -bottom-1 left-0 w-full h-32 bg-[linear-gradient(to_top,rgba(21,21,21,1),transparent)] z-20 pointer-events-none">
+    </div>
+
+    <!-- Gradient kanan -->
+    <div
+      class="hidden md:block absolute inset-0 bg-[linear-gradient(to_left,rgba(21,21,21,0.8),transparent)] z-20 pointer-events-none">
+    </div>
 
     <div class="relative z-20 flex items-center h-full">
       <div class="w-full max-w-screen mx-[10px] md:mx-[80px] flex md:justify-end px-6 py-6">
         <div class="text-center md:text-right w-full max-w-[1000px]">
-          <h1 class="text-whitePrimary text-4xl md:text-6xl font-bold mb-2 md:mb-4 uppercase">Your Window Into the Car
-            Scene
-
+          <h1 class="text-whitePrimary text-4xl md:text-6xl font-bold mb-2 md:mb-4 uppercase">Ngegas Konten Otomotif Biar
+            Makin Keren
           </h1>
           <p class="text-whitePrimary font-light text-lg md:text-xl mb-6">Good Media adalah platform kreatif yang
             menyajikan informasi seputar event mobil, video vlog otomotif, dan layanan video cinematic profesional. Ingin
@@ -22,7 +28,7 @@
             wujudkannya!
 
           </p>
-          <x-button href="#Learn More" text="explore now" color="outline"
+          <x-button href="#Learn More" text="lihat selengkapnya" color="outline"
             padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
         </div>
       </div>
@@ -37,12 +43,13 @@
       <section class="w-full mt-10 md:px-4">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
           <h2 class="text-blackPrimary text-3xl md:text-4xl font-medium uppercase leading-tight">
-            This Month in<br>motion
+            Kilas Balik<br>Bulan Ini
           </h2>
         </div>
         <div class="flex flex-col md:flex-row gap-4">
           <!-- Kotak besar kiri -->
-          <div onclick="window.location='/mediaDetail'" class="cursor-pointer w-full md:w-2/3 h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-md">
+          <div onclick="window.location='/mediaDetail'"
+            class="cursor-pointer w-full md:w-2/3 h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-md">
             <div
               class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 h-full">
               <div class="absolute inset-0 bg-cover bg-center"
@@ -55,7 +62,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                   </p>
                 </div>
-                <x-button href="/mediaDetail" text="read more" color="text" padding="" class="text-white" />
+                <x-button href="/mediaDetail" text="Baca selengkapnya" color="text" padding="" class="text-white" />
               </div>
             </div>
           </div>
@@ -64,7 +71,8 @@
           <!-- Dua kotak kecil kanan -->
           <div class="w-full md:w-1/3 flex flex-col gap-4">
             <!-- Thumbnail 1 -->
-            <div onclick="window.location='/mediaDetail'" class="cursor-pointer h-[140px] md:h-[190px] rounded-xl overflow-hidden shadow-md">
+            <div onclick="window.location='/mediaDetail'"
+              class="cursor-pointer h-[140px] md:h-[190px] rounded-xl overflow-hidden shadow-md">
               <div
                 class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 h-full">
                 <div class="absolute inset-0 bg-cover bg-center"
@@ -77,12 +85,14 @@
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </p>
                   </div>
-                  <x-button href="/mediaDetail" text="read more" color="text" padding="" class="text-white" />
+                  <x-button href="/mediaDetail" text="Baca selengkapnya" color="text" padding=""
+                    class="text-white" />
                 </div>
               </div>
             </div>
             <!-- Thumbnail 2 -->
-            <div onclick="window.location='/mediaDetail'" class="cursor-pointer h-[140px] md:h-[190px] rounded-xl overflow-hidden shadow-md">
+            <div onclick="window.location='/mediaDetail'"
+              class="cursor-pointer h-[140px] md:h-[190px] rounded-xl overflow-hidden shadow-md">
               <div
                 class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 h-full">
                 <div class="absolute inset-0 bg-cover bg-center"
@@ -95,7 +105,8 @@
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </p>
                   </div>
-                  <x-button href="/mediaDetail" text="read more" color="text" padding="" class="text-white" />
+                  <x-button href="/mediaDetail" text="Baca selengkapnya" color="text" padding=""
+                    class="text-white" />
                 </div>
               </div>
             </div>
@@ -107,7 +118,7 @@
       <div class="w-full mt-20 md:px-4">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8 md:mb-4">
           <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-            event of the<br>month
+            Event Pilihan<br>Bulan Ini
           </h2>
         </div>
         <!-- Swiper -->
@@ -161,9 +172,9 @@
       <div class="w-full mt-20 md:px-4">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
           <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight mb-8 md:mb-0">
-            Good<br>Media
+            Tonton<br>Videonya
           </h2>
-          <x-button href="#Learn More" text="learn more" color="text"
+          <x-button href="#Learn More" text="lihat selengkapnya" color="text"
             padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
         </div>
 
@@ -204,41 +215,41 @@
       <div class="w-full mt-20 md:px-4">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
           <h2 class="text-blackPrimary text-3xl md:text-4xl font-medium uppercase leading-tight">
-            Capture Your Car<br>in Motion
+            Rekam Aksi Terbaik<br>Mobilmu
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           {{-- card 1 --}}
           <div class="bg-white rounded-3xl shadow-md overflow-hidden w-full mx-auto sm:max-w-full">
-            <img src="images/hero-images-1.jpg" alt="" class="w-full h-48 object-cover rounded-t-lg">
+            <img src="images/CARD-MEDIA-01.jpg" alt="" class="w-full h-48 object-cover rounded-t-lg">
             <div class="p-4">
               <h3
                 class="text-lg font-bold text-black uppercase border-b border-whiteSecondary border-l first:border-l-0 pb-2 mb-2">
-                Single PACKAGE</h3>
-              <p class="text-blackSecondary text-xs">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                Paket Single</h3>
+              <p class="text-blackSecondary text-xs">Sesi video sinematik eksklusif yang didedikasikan sepenuhnya untuk
+                menampilkan keindahan dan detail mobil Anda. deal untuk klub mobil atau acara kumpul bersama. Kami
+                abadikan setiap momen kebersamaan dan deretan mobil Anda secara epik.</p>
             </div>
             <div class="mt-3 md:mt-5 p-4 flex justify-center md:justify-between items-center z-10">
-              <p class="text-blackSecondary font-light text-2xs md:text-xs">*Contact us for the price</p>
-              <x-button href="#Learn More" text="ask the price" color="primary" size="sm"
+              <p class="text-blackSecondary font-light text-2xs md:text-xs">*Hubungi kami untuk harga</p>
+              <x-button href="#Learn More" text="Hubungi kami" color="primary" size="sm"
                 class="w-full justify-between md:w-auto" />
             </div>
           </div>
           {{-- card 2 --}}
           <div class="bg-white rounded-3xl shadow-md overflow-hidden w-full mx-auto sm:max-w-full">
-            <img src="images/hero-images-1.jpg" alt="" class="w-full h-48 object-cover rounded-t-lg">
+            <img src="images/CARD-MEDIA-02.jpg" alt="" class="w-full h-48 object-cover rounded-t-lg">
             <div class="p-4">
               <h3
                 class="text-lg font-bold text-black uppercase border-b border-whiteSecondary border-l first:border-l-0 pb-2 mb-2">
-                Group PACKAGE</h3>
-              <p class="text-blackSecondary text-xs">Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                Paket Grup</h3>
+              <p class="text-blackSecondary text-xs">Sesi video sinematik eksklusif yang didedikasikan sepenuhnya untuk
+                menampilkan keindahan dan detail mobil Anda bersama grup. deal untuk klub mobil atau acara kumpul bersama.
+                Kami abadikan setiap momen kebersamaan dan deretan mobil Anda secara epik.</p>
             </div>
             <div class="mt-3 md:mt-5 p-4 flex justify-center md:justify-between items-center z-10">
-              <p class="text-blackSecondary font-light text-2xs md:text-xs">*Contact us for the price</p>
-              <x-button href="#Learn More" text="ask the price" color="primary" size="sm"
+              <p class="text-blackSecondary font-light text-2xs md:text-xs">*Hubungi kami untuk harga</p>
+              <x-button href="#Learn More" text="hubungi kami" color="primary" size="sm"
                 class="w-full justify-between md:w-auto" />
             </div>
           </div>
@@ -249,40 +260,44 @@
       <div class="w-full mt-20 md:px-4 mb-10">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
           <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-            Complete Car Experience:<br>Buy or Care
+            Penuhi kebutuhan kendaraanmu:<br>Beli atau Perawatan
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <!-- Card 1 -->
-          <div class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+          <div onclick="window.location='/'"
+            class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
             <div class="absolute inset-0 bg-cover bg-center"
-              style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
+              style="background-image: url('{{ asset('images/HERO-IMAGES-01.jpg') }}');"></div>
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="justify between">
               <div class="relative z-10 px-6 py-10 justify between">
                 <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">good car</h3>
                 <p class="text-whiteSecondary text-sm mb-14">
-                  Buy and sell luxury vehicles with confidence and ease.
+                  Solusi Jual Beli Mobil Berkualitas dengan Aman dan Nyaman
                 </p>
                 <div>
-                  <x-button href="#Learn More" text="learn more" color="text" padding="" class="text-white" />
+                  <x-button href="/" text="lihat selengkapnya" color="text" padding=""
+                    class="text-white" />
                 </div>
               </div>
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+          <div onclick="window.location='/wash'"
+            class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
             <div class="absolute inset-0 bg-cover bg-center"
-              style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
+              style="background-image: url('{{ asset('images/HERO-IMAGES-02.jpg') }}');"></div>
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="justify between">
               <div class="relative z-10 px-6 py-10 justify between">
                 <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">good wash</h3>
                 <p class="text-whiteSecondary text-sm mb-14">
-                  Premium Car Wash & Detailing Services to Keep Your Vehicle Spotless.
+                  Bikin Mobil Kinclong, Tanpa Ribet
                 </p>
                 <div>
-                  <x-button href="#Learn More" text="learn more" color="text" padding="" class="text-white" />
+                  <x-button href="/wash" text="lihat selengkapnya" color="text" padding=""
+                    class="text-white" />
                 </div>
               </div>
             </div>

@@ -4,15 +4,17 @@
 
 @section('hero')
   <section class="h-80 w-full bg-cover bg-center flex items-center justify-center"
-    style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');">
+    style="background-image: url('{{ asset('images/HERO-IMAGES-05.jpg') }}');">
     <div class="absolute h-80 inset-0 bg-black/70 md:bg-black/70 z-10"></div>
-    <div class="absolute top-0 left-0 w-full h-80 bg-gradient-to-b from-transparent to-blackPrimary z-30"></div>
+    <div
+      class="absolute top-0 left-0 w-full h-80 bg-[linear-gradient(to_top,rgba(21,21,21,1),transparent)] z-10 pointer-events-none">
+    </div>
 
     <div class="relative z-10 flex items-end mb-40 h-full">
       <div class="w-full max-w-screen mx-[10px] md:mx-[80px] flex px-6 py-6">
         <div class="text-center w-full max-w-[1000px]">
-          <h2 class="text-whitePrimary text-2xl md:text-4xl font-bold mb-2 md:mb-4 uppercase">Your Next Car is Just a Click
-            Away</h2>
+          <h2 class="text-whitePrimary text-2xl md:text-4xl font-bold mb-2 md:mb-4 uppercase">Mobil Impian hanya untuk anda
+          </h2>
         </div>
       </div>
   </section>
@@ -30,7 +32,7 @@
               <span class="mx-2">/</span>
             </li>
             <li>
-              <a href="/carCollections" class="hover:underline text-blackSecondary font-light">Cars Collections</a>
+              <a href="/carCollections" class="hover:underline text-blackSecondary font-light">Koleksi</a>
               <span class="mx-2">/</span>
             </li>
             <li class="text-blackSecondary font-medium">Porsche 911</li>
@@ -97,8 +99,8 @@
 
               <!-- Car specs detail -->
               <div class="mt-8 bg-white p-6 rounded-2xl shadow">
-                <h2 class="text-2xl font-bold text-blackPrimary text-center md:text-left uppercase mb-4">Car
-                  Specifications</h2>
+                <h2 class="text-2xl font-bold text-blackPrimary text-center md:text-left uppercase mb-4">Spesifikasi mobil
+                </h2>
                 <div
                   class="grid grid-cols-2 md:grid-cols-6 gap-y-2 justify-between text-blackSecondary text-xs border-b border-t border-whiteSecondary pt-2 pb-2 mb-4">
                   <div class="flex items-center space-x-1">
@@ -185,28 +187,28 @@
                       <span class="font-semibold text-blackPrimary">911 GT3 RS</span>
                     </div>
                     <div class="flex items-center space-x-1 justify-between">
-                      <span class="font-light text-blackSecondary">Type</span>
+                      <span class="font-light text-blackSecondary">Tipe</span>
                       <span class="font-semibold text-blackPrimary">Sport Car</span>
                     </div>
                   </div>
                   <div class="grid grid-cols-1 gap-y-2 text-blackSecondary mb-4">
                     <div class="flex items-center space-x-1 justify-between">
-                      <span class="font-light text-blackSecondary">Manufacturing year</span>
+                      <span class="font-light text-blackSecondary">Tahun Mobil</span>
                       <span class="font-semibold text-blackPrimary">2024</span>
                     </div>
                     <div class="flex items-center space-x-1 justify-between">
-                      <span class="font-light text-blackSecondary">Engine Capacity</span>
+                      <span class="font-light text-blackSecondary">Kapasitas Mesin</span>
                       <span class="font-semibold text-blackPrimary">3.996 cc</span>
                     </div>
                     <div class="flex items-center space-x-1 justify-between">
-                      <span class="font-light text-blackSecondary">Fuel Type</span>
+                      <span class="font-light text-blackSecondary">Bahan Bakar</span>
                       <span class="font-semibold text-blackPrimary">Petrol RON 98</span>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <h2 class="text-2xl font-bold text-center md:text-left text-blackPrimary uppercase mb-4">Modification
-                    Parts</h2>
+                  <h2 class="text-2xl font-bold text-center md:text-left text-blackPrimary uppercase mb-4">Modifikasi
+                  </h2>
                   <ul class="list-disc pl-5 mb-8 text-sm md:text-base text-blackSecondary">
                     <li>High-performance exhaust system for improved sound and power delivery.</li>
                     <li>Upgraded suspension components for better handling and ride comfort.</li>
@@ -281,8 +283,8 @@
                 <x-button href="#Learn More" text="I’M READY TO BUY" color="primary" size="md"
                   class="w-full justify-between" />
                 <div class="flex flex-row justify-between">
-                  <p class="text-[8px] italic">*Price is negotiable</p>
-                  <p class="text-[8px] italic">You will redirect to WhatsApp to contact with owner</p>
+                  <p class="text-[8px] italic">*Harga negotiable</p>
+                  <p class="text-[8px] italic">Anda akan diarahkan ke WhatsApp</p>
                 </div>
               </div>
             </div>
@@ -292,17 +294,18 @@
               <div class="sticky top-8 bg-white p-4 rounded-2xl shadow">
                 <div class="flex items-center justify-between border-b border-whiteSecondary first:border-l-0 pb-3 mb-4">
                   <div>
-                  <h2 class="text-xl text-blackPrimary font-bold uppercase">PORSCHE 911</h2>
-                <p
-                  class="text-blackSecondary text-xs uppercase">
-                  {{ $brand ?? 'PORSCHE' }}</p>
+                    <h2 class="text-xl text-blackPrimary font-bold uppercase">PORSCHE 911</h2>
+                    <p class="text-blackSecondary text-xs uppercase">
+                      {{ $brand ?? 'PORSCHE' }}</p>
                   </div>
                   <a href="">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
-                  </svg>
-                  </a>  
-                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="black" class="size-5">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                    </svg>
+                  </a>
+                </div>
                 <div
                   class="grid grid-cols-2 gap-y-2 gap-x-4 justify-between text-blackSecondary text-xs border-b border-whiteSecondary pb-4 mb-4">
                   <div class="flex items-center space-x-1">
@@ -354,9 +357,9 @@
                   </div>
                 </div>
                 <div class="flex-col text-start mb-2">
-                  <p class="text-xs text-blackSecondary uppercase">START FROM</p>
+                  <p class="text-xs text-blackSecondary uppercase">Mulai Dari</p>
                   <p class="text-red-800 font-bold text-lg md:text-xl">Rp2.000.000.000</p>
-                  <p class="text-2xs text-blackSecondary mb-4">Negotiable | Available cash & credit</p>
+                  <p class="text-2xs text-blackSecondary mb-4">Negotiable | Cash & Credit</p>
                   <p class="text-xs text-blackPrimary border-b border-whiteSecondary first:border-l-0 pb-4 mb-4">Lorem
                     ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                     dolore magna aliqua.</p>
@@ -364,8 +367,7 @@
                 <div class="flex-col w-full text-start">
                   <x-button href="#Learn More" text="I’M READY TO BUY" color="primary" size="md"
                     class="w-full justify-between" />
-                  <p class="text-[8px] italic text-blackSecondary mt-1 mb-4">You will redirect to WhatsApp to contact
-                    with owner</p>
+                  <p class="text-[8px] italic text-blackSecondary mt-1 mb-4">Anda akan diarahkan ke WhatsApp</p>
                 </div>
             </aside>
           </div>
@@ -375,7 +377,7 @@
         <div class="w-full mt-20 md:px-4">
           <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
             <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-              Other<br>Collections
+              Koleksi<br>Lainnya
             </h2>
           </div>
           <div class="relative">
@@ -426,7 +428,7 @@
         <div class="w-full mt-20 md:px-4">
           <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
             <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-              Customer<br>Reviews
+              Ulasan<br>Pelanggan
             </h2>
           </div>
           <div class="relative">
@@ -472,7 +474,8 @@
           </div>
         </div>
 
-        <div class="w-full mt-20 md:px-4 mb-40">
+        <!-- Frequently Asked Questions -->
+        <div class="w-full mt-20 md:px-4 mb-10">
           <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
             <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
               Frequently asked<br>questions
@@ -485,7 +488,7 @@
             <div class="border rounded-xl shadow-md">
               <button aria-expanded="false" aria-controls="panel1" id="accordion1" onclick="toggleAccordion(this)"
                 class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
-                What is Flowbite?
+                Apakah mobil yang dijual di Good Cars sudah diperiksa kondisinya?
                 <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
                   fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -493,7 +496,8 @@
               </button>
               <div id="panel1" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
                 aria-labelledby="accordion1">
-                Flowbite is an open-source library of interactive components built on top of Tailwind CSS.
+                Ya. Semua mobil yang kami jual telah melalui proses inspeksi menyeluruh, termasuk kondisi mesin, interior,
+                eksterior, dan dokumen kendaraan. Kami memastikan mobil dalam keadaan siap pakai dan layak jalan.
               </div>
             </div>
 
@@ -501,7 +505,7 @@
             <div class="border rounded-xl shadow-md">
               <button aria-expanded="false" aria-controls="panel2" id="accordion2" onclick="toggleAccordion(this)"
                 class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
-                Why use Flowbite?
+                Apakah bisa membeli mobil secara kredit?
                 <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
                   fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -509,7 +513,8 @@
               </button>
               <div id="panel2" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
                 aria-labelledby="accordion2">
-                It helps you build consistent UIs with accessible components.
+                Tentu! Kami menyediakan opsi pembayaran tunai (cash), kredit/leasing, dan tukar tambah. Tim kami siap
+                membantu proses pengajuan kredit agar lebih mudah dan cepat
               </div>
             </div>
 
@@ -517,7 +522,7 @@
             <div class="border rounded-xl shadow-md">
               <button aria-expanded="false" aria-controls="panel3" id="accordion3" onclick="toggleAccordion(this)"
                 class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
-                How to get started?
+                Apakah bisa tukar tambah mobil lama saya?
                 <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
                   fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -525,9 +530,43 @@
               </button>
               <div id="panel3" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
                 aria-labelledby="accordion3">
-                You can get started by installing Tailwind CSS and Flowbite via npm or CDN.
+                Bisa. Kami menerima tukar tambah mobil lama Anda dengan unit yang tersedia di Good Cars. Tim kami akan
+                membantu proses pengecekan dan penawaran harga terbaik.
               </div>
             </div>
+            <!-- Accordion 4 -->
+            <div class="border rounded-xl shadow-md">
+              <button aria-expanded="false" aria-controls="panel4" id="accordion4" onclick="toggleAccordion(this)"
+                class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
+                Apakah Good Cars melayani pengantaran mobil ke luar kota?
+                <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div id="panel4" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
+                aria-labelledby="accordion2">
+                Ya. Kami menyediakan layanan towing/pengiriman mobil ke area lokal maupun luar kota sesuai kesepakatan.
+                Biaya pengiriman akan diinformasikan terlebih dahulu.
+              </div>
+            </div>
+            <!-- Accordion 5 -->
+            <div class="border rounded-xl shadow-md">
+              <button aria-expanded="false" aria-controls="panel5" id="accordion5" onclick="toggleAccordion(this)"
+                class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
+                Apakah harga mobil bisa nego?
+                <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div id="panel5" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
+                aria-labelledby="accordion2">
+                Ya, harga masih bisa dinegosiasikan langsung sesuai kondisi unit dan kesepakatan. Jangan ragu untuk
+                bertanya kepada tim kami untuk mendapatkan penawaran terbaik.
+              </div>
+            </div>
+
           </div>
         </div>
       </div>

@@ -2,7 +2,7 @@
   <!-- Main Footer Section -->
   <div class="mx-[18px] md:mx-[80px] flex flex-wrap gap-10 justify-between">
     <!-- Brand -->
-    <div class="flex-1 min-w-[220px]">
+    <div class="flex-1 min-w-[220px] max-w-[600px]">
       <div class="text-3xl italic font-bold font-helvetica tracking-wider text-whitePrimary mb-4">
         GOOD
       </div>
@@ -17,33 +17,27 @@
     </div>
 
     <div class="flex flex-wrap md:flex-row mt-10">
-      <!-- About -->
-      <div class="flex-1 min-w-[150px]">
-        <h4 class="font-semibold mb-2">ABOUT</h4>
-        <a href="#about" class="block text-sm mb-1 hover:underline">About Us</a>
-        <a href="#media" class="block text-sm mb-1 hover:underline">Media</a>
-      </div>
 
       <!-- Services -->
       <div class="flex-1 min-w-[150px]">
-        <h4 class="font-semibold mb-2">SERVICES</h4>
-        <a href="#cars" class="block text-sm mb-1 hover:underline">Cars</a>
-        <a href="#wash" class="block text-sm mb-1 hover:underline">Wash</a>
-        <a href="#media" class="block text-sm mb-1 hover:underline">Media</a>
+        <h4 class="font-semibold mb-2 uppercase">Layanan</h4>
+        <a href="/" class="block text-sm mb-1 hover:underline cursor-pointer">Cars</a>
+        <a href="/wash" class="block text-sm mb-1 hover:underline cursor-pointer">Wash</a>
+        <a href="/media" class="block text-sm mb-1 hover:underline cursor-pointer">Media</a>
       </div>
 
       <!-- Support -->
       <div class="flex-1 min-w-[150px]">
-        <h4 class="font-semibold mb-2">SUPPORT</h4>
-        <a href="#contact" class="block text-sm mb-1 hover:underline">Contact Us</a>
-        <a href="#faq" class="block text-sm mb-1 hover:underline">FAQ</a>
+        <h4 class="font-semibold mb-2 uppercase">BANTUAN</h4>
+        <a href="#contact" class="block text-sm mb-1 hover:underline cursor-pointer">Contact Us</a>
+        <a href="#faq" class="block text-sm mb-1 hover:underline cursor-pointer">FAQ</a>
       </div>
 
       <!-- Updates & Social -->
       <div class="flex-1 mt-6 md:mt-0">
-        <h4 class="font-semibold mb-2">UPDATES</h4>
+        <h4 class="font-semibold mb-2 uppercase">UPDATES</h4>
         <div class="flex mb-4">
-          <input type="email" placeholder="Enter your email"
+          <input type="email" placeholder="Input email anda"
             class="flex-grow px-4 py-2 rounded-l-md text-black text-sm focus:outline-none" />
           <button class="px-4 py-2 bg-zinc-800 text-white rounded-r-md hover:bg-zinc-700 transition">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
@@ -55,7 +49,7 @@
             </svg>
           </button>
         </div>
-        <div class="flex items-center space-x-3">
+        <div class="flex items-center gap-3">
           <a href="#"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24"
               height="24" fill="currentColor">
               <title>Instagram</title>
@@ -92,7 +86,8 @@
   </div>
 
   <!-- Footer Bottom -->
-  <div class="border-t border-zinc-800 mt-10 pt-5 flex flex-col md:flex-row justify-between text-sm items-center">
+  <div
+    class="mx-[18px] md:mx-[80px] border-t border-zinc-800 mt-10 pt-5 flex flex-col md:flex-row justify-between text-sm items-center">
     <p class="font-light text-blackSecondary">Copyright © 2025 Karana. All Rights Reserved</p>
     <p class="italic font-bold font-helvetica tracking-wider text-blackSecondary">GOOD</p>
   </div>

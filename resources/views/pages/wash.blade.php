@@ -4,10 +4,17 @@
 
 @section('hero')
   <section class="h-screen w-full bg-cover bg-center flex items-center justify-end"
-    style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');">
-    <div class="absolute inset-0 bg-black/70 md:bg-black/50 z-10"></div>
-    <div div class="hidden md:block absolute inset-0 bg-gradient-to-l from-black/60 to-transparent z-20"></div>
-    <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-blackPrimary z-30"></div>
+    style="background-image: url('{{ asset('images/HERO-IMAGES-02.jpg') }}');">
+    <div class="absolute inset-0 bg-black/70 md:bg-black/40 z-10"></div>
+    <!-- Gradient bawah -->
+    <div
+      class="absolute -bottom-1 left-0 w-full h-32 bg-[linear-gradient(to_top,rgba(21,21,21,1),transparent)] z-20 pointer-events-none">
+    </div>
+
+    <!-- Gradient kanan -->
+    <div
+      class="hidden md:block absolute inset-0 bg-[linear-gradient(to_left,rgba(21,21,21,0.8),transparent)] z-20 pointer-events-none">
+    </div>
 
     <div class="relative z-20 flex items-center h-full">
       <div class="w-full max-w-screen mx-[10px] md:mx-[80px] flex md:justify-end px-6 py-6">
@@ -30,7 +37,7 @@
 
 @section('content')
   <!-- Main Container for all sections except hero and footer -->
-  <div class="relative mx-auto max-w-screen -mt-10 z-30 px-6">
+  <div class="relative mx-auto max-w-screen -mt-20 z-30 px-6">
     <div class="bg-whitePrimary rounded-3xl p-10 shadow-md">
 
       <!-- Redefined Section -->
@@ -45,14 +52,15 @@
             <p class="text-blackPrimary font-bold text-sm md:text-base mb-2 text-center md:text-left uppercase">
               PREMIUM WASH&nbsp;&nbsp;|&nbsp;&nbsp;DETAILING&nbsp;&nbsp;|&nbsp;&nbsp;INTERIOR
             </p>
-            <p class="text-blackSecondary text-sm md:text-base text-center md:text-left mb-8">
-              Cuci kendaraan Premium dengan Sentuhan Profesional. Bikin Mobil Kinclong, Tanpa Ribet 
+            <p class="text-blackSecondary text-sm md:text-base text-center md:text-left">
+              Cuci kendaraan Premium dengan Sentuhan Profesional. Bikin Mobil Kinclong, Tanpa Ribet
             </p>
             <div class="flex justify-center md:justify-start">
             </div>
           </div>
           <div class="w-full rounded-lg overflow-hidden ml-8 mt-8 md:mt-0">
-            <img src="{{ asset('images/car-wash.jpg') }}" alt="Good Wash" class="w-full h-full object-cover rounded-lg" />
+            <img src="{{ asset('images/CARD-CARS-03.jpg') }}" alt="Good Wash"
+              class="w-full h-full object-cover rounded-lg" />
           </div>
         </div>
       </section>
@@ -68,36 +76,41 @@
           <!-- Card 1 -->
           <div class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
             <div class="absolute inset-0 bg-cover bg-center"
-              style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
-            <div class="absolute inset-0 bg-black/70"></div>
+              style="background-image: url('{{ asset('images/CARD-WASH-01.jpg') }}');"></div>
+            <div class="absolute inset-0 bg-black/80"></div>
             <div class="relative z-10 px-6 py-10 text-center flex flex-col items-center justify-end h-full">
-              <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase mb-1 mt-8">BERPENGALAMAN & TERPERCAYA</h3>
+              <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase mb-1 mt-8">BERPENGALAMAN & TERPERCAYA
+              </h3>
               <p class="text-whiteSecondary text-xs md:text-sm">
-                Dikerjakan oleh tim profesional berpengalaman untuk menjamin hasil yang teliti dan konsisten setiap saat untukS kendaraan kesayangan anda.
+                Dikerjakan oleh tim profesional berpengalaman untuk menjamin hasil yang teliti dan konsisten setiap saat
+                untukS kendaraan kesayangan anda.
               </p>
             </div>
           </div>
           <!-- Card 2 -->
           <div class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
             <div class="absolute inset-0 bg-cover bg-center"
-              style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
-            <div class="absolute inset-0 bg-black/70"></div>
+              style="background-image: url('{{ asset('images/CARD-WASH-02.jpg') }}');"></div>
+            <div class="absolute inset-0 bg-black/80"></div>
             <div class="relative z-10 px-6 py-10 text-center flex flex-col items-center justify-end h-full">
-              <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase mb-1 mt-8">KUALITAS DETAILING PREMIUM</h3>
+              <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase mb-1 mt-8">KUALITAS DETAILING PREMIUM
+              </h3>
               <p class="text-whiteSecondary text-xs md:text-sm">
-                Kami menggunakan produk dan teknik terbaik untuk memulihkan serta melindungi eksterior  dan interior mobil Anda, hingga ke detail terkecil.
+                Kami menggunakan produk dan teknik terbaik untuk memulihkan serta melindungi eksterior dan interior mobil
+                Anda, hingga ke detail terkecil.
               </p>
             </div>
           </div>
           <!-- Card 3 -->
           <div class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
             <div class="absolute inset-0 bg-cover bg-center"
-              style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
-            <div class="absolute inset-0 bg-black/70"></div>
+              style="background-image: url('{{ asset('images/CARD-WASH-03.jpg') }}');"></div>
+            <div class="absolute inset-0 bg-black/80"></div>
             <div class="relative z-10 px-6 py-10 text-center flex flex-col items-center justify-end h-full">
               <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase mb-1 mt-8">PELAYANAN CEPAT & MUDAH</h3>
               <p class="text-whiteSecondary text-xs md:text-sm">
-                Jadwal fleksibel dan layanan cepat adalah komitmen kami untuk kepuasan Anda, menjadikan setiap kunjungan lebih mudah dan berkesan.
+                Jadwal fleksibel dan layanan cepat adalah komitmen kami untuk kepuasan Anda, menjadikan setiap kunjungan
+                lebih mudah dan berkesan.
               </p>
             </div>
           </div>
@@ -114,7 +127,7 @@
             <!-- CAR WASH -->
             <div class="rounded-3xl overflow-hidden shadow-md border border-gray-200">
               <div class="relative h-56">
-                <img src="/images/car-wash.jpg" alt="Car Wash" class="w-full h-full object-cover" />
+                <img src="/images/CARD-WASH-04.jpg" alt="Car Wash" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-black/70 p-6 flex flex-col justify-end text-center md:text-start">
                   <h3 class="text-whitePrimary text-2xl md:text-3xl font-bold uppercase mb-1">CUCI MOBIL</h3>
                   <p class="text-whiteSecondary text-2xs md:text-sm">Perawatan cuci standar untuk mengembalikan kilau
@@ -163,10 +176,11 @@
             <!-- MOTO WASH -->
             <div class="rounded-3xl overflow-hidden shadow-md border border-gray-200">
               <div class="relative h-56">
-                <img src="/images/car-wash.jpg" alt="Car Wash" class="w-full h-full object-cover" />
+                <img src="/images/CARD-WASH-05.jpg" alt="Car Wash" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-black/70 p-6 flex flex-col justify-end text-center md:text-start">
                   <h3 class="text-whitePrimary text-2xl md:text-3xl font-bold uppercase mb-1">CUCI motor</h3>
-                  <p class="text-whiteSecondary text-2xs md:text-sm">Layanan cuci khusus untuk membersihkan setiap bagian motor, dari bodi hingga area mesin yang sulit dijangkau.</p>
+                  <p class="text-whiteSecondary text-2xs md:text-sm">Layanan cuci khusus untuk membersihkan setiap bagian
+                    motor, dari bodi hingga area mesin yang sulit dijangkau.</p>
                 </div>
               </div>
               <div class="bg-whitePrimary px-6 py-6">
@@ -224,8 +238,8 @@
             <!-- CAR AUTO DETAILING -->
             <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
               <div class="relative h-48">
-                <img src="/images/car-wash.jpg" alt="Cars Autodetailing" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/70 p-4 flex flex-col justify-end">
+                <img src="/images/CARD-WASH-06.jpg" alt="Cars Autodetailing" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/80 p-4 flex flex-col justify-end">
                   <h3 class="text-whitePrimary text-xl md:text-2xl font-bold text-center md:text-start uppercase mb-1">
                     DETAILING MOBIL
                   </h3>
@@ -261,8 +275,8 @@
             <!-- PREMIUM CARS POLES -->
             <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
               <div class="relative h-48">
-                <img src="/images/car-wash.jpg" alt="Premium Cars Poles" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/70 p-4 flex flex-col justify-end">
+                <img src="/images/CARD-WASH-07.jpg" alt="Premium Cars Poles" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/80 p-4 flex flex-col justify-end">
                   <h3 class="text-whitePrimary text-xl md:text-2xl text-center md:text-start font-bold uppercase mb-1">
                     POLES & COATING PREMIUM
                   </h3>
@@ -299,8 +313,8 @@
             <!-- MOTO AUTO DETAILING -->
             <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-200">
               <div class="relative h-48">
-                <img src="/images/car-wash.jpg" alt="Moto Autodetailing" class="w-full h-full object-cover">
-                <div class="absolute inset-0 bg-black/70 p-4 flex flex-col justify-end">
+                <img src="/images/CARD-WASH-08.jpg" alt="Moto Autodetailing" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-black/80 p-4 flex flex-col justify-end">
                   <h3 class="text-whitePrimary text-xl md:text-2xl text-center md:text-start font-bold uppercase mb-1">
                     DETAILING MOTOR
                   </h3>
@@ -345,8 +359,8 @@
           <div class="rounded-2xl overflow-hidden shadow-lg border border-gray-200 mt-8 flex flex-col md:flex-row">
             <!-- Gambar di kiri -->
             <div class="relative md:w-1/2 h-48 md:h-auto">
-              <img src="/images/car-wash.jpg" alt="Moto Autodetailing" class="w-full h-full object-cover">
-              <div class="absolute inset-0 bg-black/70 p-8 flex flex-col justify-end">
+              <img src="/images/CARD-WASH-09.jpg" alt="Moto Autodetailing" class="w-full h-full object-cover">
+              <div class="absolute inset-0 bg-black/80 p-4 md:p-8 flex flex-col justify-end">
                 <h3 class="text-whitePrimary text-xl md:text-3xl text-center md:text-start font-bold uppercase mb-1">
                   DETAILING
                 </h3>
@@ -412,24 +426,27 @@
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Card 1 -->
-            <div onClick="window.location.href=''" class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+            <div onClick="window.location.href=''"
+              class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
               <div class="absolute inset-0 bg-cover bg-center"
-                style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
-              <div class="absolute inset-0 bg-black/70"></div>
+                style="background-image: url('{{ asset('images/CARD-WASH-11.jpg') }}');"></div>
+              <div class="absolute inset-0 bg-black/80"></div>
               <div class="relative z-10 px-6 py-10">
                 <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">Cuci Premium</h3>
                 <p class="text-whiteSecondary text-xs mb-14">
-                  Kendaraan Anda akan dibersihkan dengan perawatan terbaik,menggunakan produk lembut ber-pH seimbang untuk hasil bersih sempurna tanpa noda.
+                  Kendaraan Anda akan dibersihkan dengan perawatan terbaik,menggunakan produk lembut ber-pH seimbang untuk
+                  hasil bersih sempurna tanpa noda.
                 </p>
                 <x-button href="/carCollections" text="Hubungi Kami" color="text" padding=""
                   class="text-white" />
               </div>
             </div>
             <!-- Card 2 -->
-            <div onClick="window.location.href=''" class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+            <div onClick="window.location.href=''"
+              class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
               <div class="absolute inset-0 bg-cover bg-center"
-                style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
-              <div class="absolute inset-0 bg-black/70"></div>
+                style="background-image: url('{{ asset('images/CARD-WASH-10.jpg') }}');"></div>
+              <div class="absolute inset-0 bg-black/80"></div>
               <div class="relative z-10 px-6 py-10">
                 <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">Layanan detailing</h3>
                 <p class="text-whiteSecondary text-xs mb-14">
@@ -453,7 +470,8 @@
                   jl. tukad badung no.166x, renon, denpasar
                 </p>
                 <p class="text-blackSecondary text-sm md:text-base text-center md:text-left mb-10 md:mb-0">
-                  Temukan pusat cuci dan detailing premium kami dengan mudah. Hanya satu sentuhan untuk hasil sekelas showroom dan perawatan terbaik untuk kendaraan Anda.
+                  Temukan pusat cuci dan detailing premium kami dengan mudah. Hanya satu sentuhan untuk hasil sekelas
+                  showroom dan perawatan terbaik untuk kendaraan Anda.
                 </p>
                 <div class="flex justify-center md:justify-start">
                 </div>
@@ -533,18 +551,18 @@
           <div class="flex flex-col md:flex-row items-end md:justify-between md:text-left mb-8">
             <div>
               <p class="text-blackPrimary font-bold text-sm md:text-base mb-2 text-center md:text-left uppercase">
-                BUY&nbsp;&nbsp;|&nbsp;&nbsp;SELL&nbsp;&nbsp;|&nbsp;&nbsp;TRADE
+                BELI&nbsp;&nbsp;|&nbsp;&nbsp;JUAL&nbsp;&nbsp;|&nbsp;&nbsp;TUKAR TAMBAH
               </p>
               <p class="text-blackSecondary text-sm md:text-base text-center md:text-left mb-8">
-                Experience top-tier car care with our premium wash and detailing services. We meticulously clean, polish,
-                and protect every inch of your vehicle—inside and out.
+                Good Cars menawarkan mobil bekas berkualitas dan mobil modifikasi yang siap digunakan, seluruh unit telah
+                melalui proses inspeksi menyeluruh untuk memastikan kenyamanan, keamanan, dan performa optimal.
               </p>
               <div class="flex justify-center md:justify-start">
-                <x-button href="/" text="Learn More" color="text" padding="" />
+                <x-button href="/" text="Lihat selengkapnya" color="text" padding="" />
               </div>
             </div>
             <div class="w-full rounded-lg overflow-hidden ml-8 mt-8 md:mt-0">
-              <img src="{{ asset('images/car-wash.jpg') }}" alt="Good Wash"
+              <img src="{{ asset('images/HERO-IMAGES-01.jpg') }}" alt="Good Wash"
                 class="w-full h-full object-cover rounded-lg" />
             </div>
           </div>
@@ -557,7 +575,7 @@
             <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight mb-8 md:mb-0">
               Good<br>Media
             </h2>
-            <x-button href="#Learn More" text="learn more" color="text"
+            <x-button href="/media" text="lihat selengkapnya" color="text"
               padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
           </div>
 
@@ -608,7 +626,7 @@
             <div class="border rounded-xl shadow-md">
               <button aria-expanded="false" aria-controls="panel1" id="accordion1" onclick="toggleAccordion(this)"
                 class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
-                What is Flowbite?
+                Apakah ada promo atau paket langganan di Good Wash?
                 <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
                   fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -616,7 +634,7 @@
               </button>
               <div id="panel1" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
                 aria-labelledby="accordion1">
-                Flowbite is an open-source library of interactive components built on top of Tailwind CSS.
+                Ya, kami memiliki berbagai promo menarik dan paket langganan bulanan.
               </div>
             </div>
 
@@ -624,7 +642,7 @@
             <div class="border rounded-xl shadow-md">
               <button aria-expanded="false" aria-controls="panel2" id="accordion2" onclick="toggleAccordion(this)"
                 class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
-                Why use Flowbite?
+                Berapa lama waktu pengerjaan untuk detailing kendaraan?
                 <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
                   fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -632,7 +650,7 @@
               </button>
               <div id="panel2" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
                 aria-labelledby="accordion2">
-                It helps you build consistent UIs with accessible components.
+                Rata-rata pengerjaan membutuhkan waktu 3–5 jam tergantung kondisi kendaraan.
               </div>
             </div>
 
@@ -640,7 +658,7 @@
             <div class="border rounded-xl shadow-md">
               <button aria-expanded="false" aria-controls="panel3" id="accordion3" onclick="toggleAccordion(this)"
                 class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
-                How to get started?
+                Apakah Good Wash menggunakan produk pembersih khusus?
                 <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
                   fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -648,7 +666,22 @@
               </button>
               <div id="panel3" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
                 aria-labelledby="accordion3">
-                You can get started by installing Tailwind CSS and Flowbite via npm or CDN.
+                Kami menggunakan produk berkualitas premium yang aman untuk kendaraan Anda.
+              </div>
+            </div>
+            <!-- Accordion 4 -->
+            <div class="border rounded-xl shadow-md">
+              <button aria-expanded="false" aria-controls="panel4" id="accordion4" onclick="toggleAccordion(this)"
+                class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
+                Apakah bisa order jemput kendaraan untuk layanan cuci atau detailing?
+                <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <div id="panel4" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
+                aria-labelledby="accordion4">
+                Kami menyediakan layanan jemput kendaraan dalam radius tertentu, hubungi kami untuk detailnya.
               </div>
             </div>
           </div>

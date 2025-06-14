@@ -4,15 +4,17 @@
 
 @section('hero')
   <section class="h-80 w-full bg-cover bg-center flex items-center justify-center"
-    style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');">
+    style="background-image: url('{{ asset('images/HERO-IMAGES-07.jpg') }}');">
     <div class="absolute h-80 inset-0 bg-black/70 md:bg-black/70 z-10"></div>
-    <div class="absolute top-0 left-0 w-full h-80 bg-gradient-to-b from-transparent to-blackPrimary z-30"></div>
+    <div
+      class="absolute top-0 left-0 w-full h-80 bg-[linear-gradient(to_top,rgba(21,21,21,1),transparent)] z-10 pointer-events-none">
+    </div>
 
     <div class="relative z-10 flex items-end mb-40 h-full">
       <div class="w-full max-w-screen mx-[10px] md:mx-[80px] flex px-6 py-6">
         <div class="text-center w-full max-w-[1000px]">
-          <h2 class="text-whitePrimary text-2xl md:text-4xl font-bold mb-2 md:mb-4 uppercase">Your Next Car is Just a Click
-            Away</h2>
+          <h2 class="text-whitePrimary text-2xl md:text-4xl font-bold mb-2 md:mb-4 uppercase">Informasi Terbaru Hanya di
+            Good Media</h2>
         </div>
       </div>
   </section>
@@ -97,7 +99,7 @@
             <!-- Detail Sidebar -->
             <aside class="hidden md:block md:col-span-1">
               <h1 class="text-blackPrimary text-lg md:text-2xl font-medium uppercase leading-tight mb-4">
-                Another Update
+                Informasi Lainnya
               </h1>
               <div class="w-full flex flex-col gap-4">
                 <!-- Thumbnail 1 -->
@@ -117,7 +119,8 @@
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                         </p>
                       </div>
-                      <x-button href="/mediaDetail" text="read more" color="text" padding="" class="text-white" />
+                      <x-button href="/mediaDetail" text="Baca Selengkapnya" color="text" padding=""
+                        class="text-white" />
                     </div>
                   </div>
                 </div>
@@ -138,7 +141,8 @@
                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                         </p>
                       </div>
-                      <x-button href="/mediaDetail" text="read more" color="text" padding="" class="text-white" />
+                      <x-button href="/mediaDetail" text="Baca Selengkapnya" color="text" padding=""
+                        class="text-white" />
                     </div>
                   </div>
                 </div>

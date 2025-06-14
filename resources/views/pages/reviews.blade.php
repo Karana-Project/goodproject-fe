@@ -4,14 +4,17 @@
 
 @section('hero')
   <section class="h-80 w-full bg-cover bg-center flex items-center justify-center"
-    style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');">
+    style="background-image: url('{{ asset('images/HERO-IMAGES-06.jpg') }}');">
     <div class="absolute h-80 inset-0 bg-black/70 md:bg-black/70 z-10"></div>
-    <div class="absolute top-0 left-0 w-full h-80 bg-gradient-to-b from-transparent to-blackPrimary z-30"></div>
+    <div
+      class="absolute top-0 left-0 w-full h-80 bg-[linear-gradient(to_top,rgba(21,21,21,1),transparent)] z-10 pointer-events-none">
+    </div>
 
     <div class="relative z-10 flex items-end mb-40 h-full">
       <div class="w-full max-w-screen mx-[10px] md:mx-[80px] flex px-6 py-6">
         <div class="text-center w-full max-w-[1000px]">
-          <h2 class="text-whitePrimary text-2xl md:text-4xl font-bold mb-2 md:mb-4 uppercase">Feedback That Drives Us</h2>
+          <h2 class="text-whitePrimary text-2xl md:text-4xl font-bold mb-2 md:mb-4 uppercase">Ulasan yang membantu kami
+          </h2>
         </div>
       </div>
   </section>
@@ -28,32 +31,32 @@
               <a href="/" class="hover:underline text-blackSecondary font-light">Cars</a>
               <span class="mx-2">/</span>
             </li>
-            <li class="text-blackSecondary font-medium">Write Review</li>
+            <li class="text-blackSecondary font-medium">Tulis Ulasan</li>
           </ol>
         </nav>
         <!-- Title -->
         <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-          rate our services
+          Nilai layanan kami
         </h2>
         <form>
           @csrf
           <div class="mt-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 mt-6">
               <div class="mb-4">
-                <label for="name" class="block text-base font-medium text-blackPrimary uppercase">Name</label>
+                <label for="name" class="block text-base font-medium text-blackPrimary uppercase">Nama</label>
                 <input type="text" id="name" name="name" required
-                  class="mt-1 p-4 block w-full rounded-2xl shadow-md text-blackPrimary" placeholder="Enter your name">
+                  class="mt-1 p-4 block w-full rounded-2xl shadow-md text-blackPrimary" placeholder="Masukan nama Anda">
               </div>
               <div class="mb-4">
                 <label for="email" class="block text-base font-medium text-blackPrimary uppercase">Email</label>
                 <input type="text" id="email" name="email" required
-                  class="mt-1 p-4 block w-full rounded-2xl shadow-md text-blackPrimary" placeholder="Enter your name">
+                  class="mt-1 p-4 block w-full rounded-2xl shadow-md text-blackPrimary" placeholder="Masukan email Anda">
               </div>
               <div class="mb-4">
-                <label for="services" class="block text-base font-medium text-blackPrimary uppercase">Services</label>
+                <label for="services" class="block text-base font-medium text-blackPrimary uppercase">Layanan</label>
                 <select id="services" name="services" required
                   class="mt-1 p-4 block w-full rounded-2xl shadow-md text-blackPrimary">
-                  <option value="" disabled selected hidden class="text-gray-400">Select services you used</option>
+                  <option value="" disabled selected hidden class="text-gray-400">Layanan yang anda gunakan</option>
                   <option value="sedan">Good Cars</option>
                   <option value="suv">Good Wash</option>
                   <option value="hatchback">Good Media</option>
@@ -105,9 +108,9 @@
 
             </div>
             <div class="mb-8">
-              <label for="comment" class="block text-base font-medium text-blackPrimary uppercase">Comment</label>
+              <label for="comment" class="block text-base font-medium text-blackPrimary uppercase">Komentar</label>
               <textarea id="comment" name="comment" rows="4"
-                class="mt-1 p-4 block w-full rounded-2xl shadow-md text-blackPrimary" placeholder="Enter your comment"></textarea>
+                class="mt-1 p-4 block w-full rounded-2xl shadow-md text-blackPrimary" placeholder="Tulis komentar anda"></textarea>
             </div>
             <div class="flex justify-center md:justify-end">
               <x-button type="submit" text="submit" color="" size="md"

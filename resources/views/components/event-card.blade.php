@@ -49,7 +49,7 @@
       <p class="text-gray-400 text-xs line-clamp-1 md:line-clamp-3">{{ $description }}</p>
       <div class="mt-3 md:mt-5 flex justify-center md:justify-between z-10">
         <p class="text-blackPrimary uppercase">{{ $ticket }}</p>
-        <x-button href="#Learn More" text="join now" color="primary" size="sm "
+        <x-button href="#Learn More" text="Registrasi" color="primary" size="sm "
           class="w-full justify-between md:w-auto" />
       </div>
     </div>

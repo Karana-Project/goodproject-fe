@@ -4,15 +4,17 @@
 
 @section('hero')
   <section class="h-80 w-full bg-cover bg-center flex items-center justify-center"
-    style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');">
+    style="background-image: url('{{ asset('images/HERO-IMAGES-04.jpg') }}');">
     <div class="absolute h-80 inset-0 bg-black/70 md:bg-black/70 z-10"></div>
-    <div class="absolute top-0 left-0 w-full h-80 bg-gradient-to-b from-transparent to-blackPrimary z-30"></div>
+    <div
+      class="absolute top-0 left-0 w-full h-80 bg-[linear-gradient(to_top,rgba(21,21,21,1),transparent)] z-10 pointer-events-none">
+    </div>
 
     <div class="relative z-10 flex items-end mb-40 h-full">
       <div class="w-full max-w-screen mx-[10px] md:mx-[80px] flex px-6 py-6">
         <div class="text-center w-full max-w-[1000px]">
-          <h2 class="text-whitePrimary text-2xl md:text-4xl font-bold mb-2 md:mb-4 uppercase">Your Next Car is Just a Click
-            Away</h2>
+          <h2 class="text-whitePrimary text-2xl md:text-4xl font-bold mb-2 md:mb-4 uppercase">Temukan mobil impian anda
+          </h2>
         </div>
       </div>
   </section>
@@ -29,7 +31,7 @@
               <a href="/" class="hover:underline text-blackSecondary font-light">Cars</a>
               <span class="mx-2">/</span>
             </li>
-            <li class="text-blackSecondary font-medium">Car Collections</li>
+            <li class="text-blackSecondary font-medium">Koleksi</li>
           </ol>
         </nav>
 
@@ -53,7 +55,7 @@
                 <!-- Duplikat isi dari <form> sidebar -->
                 <form>
                   <div class="mb-4">
-                    <label class="block text-sm font-medium text-blackPrimary uppercase">type</label>
+                    <label class="block text-sm font-medium text-blackPrimary uppercase">tipe</label>
                     <div class="mt-2 space-y-1 text-blackSecondary font-light">
                       <label class="flex items-center space-x-2">
                         <input type="checkbox" class="form-checkbox bg-whitePrimary accent-blackPrimary" />
@@ -71,7 +73,7 @@
                   </div>
 
                   <div class="mb-4">
-                    <label class="block text-sm font-medium text-blackPrimary uppercase">year</label>
+                    <label class="block text-sm font-medium text-blackPrimary uppercase">tahun</label>
                     <div class="flex items-center space-x-2 mt-2">
                       <input type="number" placeholder="Min"
                         class="text-blackSecondary w-full px-3 py-1.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blackSecondary" />
@@ -94,14 +96,14 @@
             </div>
             <!-- Filter Sidebar -->
             <aside class="hidden md:block md:col-span-1">
-              <div class="sticky top-24 bg-white p-4 rounded-2xl shadow">
+              <div class="sticky top-10 bg-white p-4 rounded-2xl shadow">
                 <h2
                   class="text-xl text-blackPrimary font-semibold uppercase border-b border-blackPrimary border-l first:border-l-0 pb-4 mb-6">
                   Filter</h2>
                 <!-- Filter form / checkboxes / dropdown -->
                 <form>
                   <div class="mb-4">
-                    <label class="block text-sm font-medium text-blackPrimary uppercase">type</label>
+                    <label class="block text-sm font-medium text-blackPrimary uppercase">tipe</label>
                     <div class="mt-2 space-y-1 text-blackSecondary font-light">
                       <label class="flex items-center space-x-2">
                         <input type="checkbox" class="form-checkbox bg-whitePrimary accent-blackPrimary" />
@@ -119,7 +121,7 @@
                   </div>
 
                   <div class="mb-4">
-                    <label class="block text-sm font-medium text-blackPrimary uppercase">year</label>
+                    <label class="block text-sm font-medium text-blackPrimary uppercase">tahun</label>
                     <div class="flex items-center space-x-2 mt-2">
                       <input type="number" placeholder="Min"
                         class="text-blackSecondary w-full px-3 py-1.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blackSecondary" />

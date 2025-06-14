@@ -3,18 +3,29 @@
 @section('title', 'Beranda')
 
 @section('hero')
-  <section class="h-screen w-full bg-cover bg-center flex items-center justify-end"
-    style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');">
-    <div class="absolute inset-0 bg-black/70 md:bg-black/50 z-10"></div>
-    <div div class="hidden md:block absolute inset-0 bg-gradient-to-l from-black/60 to-transparent z-20"></div>
-    <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-transparent to-blackPrimary z-30"></div>
+  <section class="relative h-screen w-full bg-cover bg-center flex items-center justify-end"
+    style="background-image: url('{{ asset('images/HERO-IMAGES-01.jpg') }}');">
 
-    <div class="relative z-20 flex items-center h-full">
+    <div class="absolute inset-0 bg-black/70 md:bg-black/40 z-10"></div>
+    <!-- Gradient bawah -->
+    <div
+      class="absolute -bottom-1 left-0 w-full h-32 bg-[linear-gradient(to_top,rgba(21,21,21,1),transparent)] z-20 pointer-events-none">
+    </div>
+
+    <!-- Gradient kanan -->
+    <div
+      class="hidden md:block absolute inset-0 bg-[linear-gradient(to_left,rgba(21,21,21,0.8),transparent)] z-20 pointer-events-none">
+    </div>
+
+
+    <div class="relative z-30 flex items-center h-full">
       <div class="w-full max-w-screen mx-[10px] md:mx-[80px] flex md:justify-end px-6 py-6">
         <div class="text-center md:text-right w-full max-w-[1000px]">
-          <h1 class="text-whitePrimary text-3xl md:text-6xl font-bold mb-2 md:mb-4 uppercase">Solusi Jual Beli Mobil Berkualitas, Aman dan Nyaman</h1>
-          <p class="text-whitePrimary font-light text-md md:text-xl mb-6">Mengapa Memilih Kami Pilihan Mobil, Pelanggan Puas, Tahun Pengalaman
-</p>
+          <h1 class="text-whitePrimary text-3xl md:text-6xl font-bold mb-2 md:mb-4 uppercase">Solusi Jual Beli Mobil
+            Berkualitas, Aman dan Nyaman</h1>
+          <p class="text-whitePrimary font-light text-md md:text-xl mb-6">Mengapa Memilih Kami Pilihan Mobil, Pelanggan
+            Puas, Tahun Pengalaman
+          </p>
           <x-button href="/carCollections" text="cari sekarang" color="outline"
             padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
         </div>
@@ -75,7 +86,7 @@
           <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
             Lihat Koleksi<br>Kami
           </h2>
-          <x-button href="/carCollections" text="view all" color="text"
+          <x-button href="/carCollections" text="lihat koleksi" color="text"
             padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem] mt-4" />
         </div>
         <!-- Swiper -->
@@ -133,12 +144,14 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <!-- Card 1 -->
-          <div onclick="window.location='/mediaDetail'" class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+          <div onclick="window.location='/mediaDetail'"
+            class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
             <div class="absolute inset-0 bg-cover bg-center"
-              style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
+              style="background-image: url('{{ asset('images/CARD-CARS-01.jpg') }}');"></div>
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative z-10 px-6 py-10">
-              <h3 class="text-whitePrimary text-xl font-bold text-center md:text-start uppercase mb-1">Temukan Mobil Impian Anda
+              <h3 class="text-whitePrimary text-xl font-bold text-center md:text-start uppercase mb-1">Temukan Mobil
+                Impian Anda
               </h3>
               <p class="text-whiteSecondary text-xs md:text-sm text-center md:text-start mb-14">
                 Jelajahi koleksi mobil terbaik kami yang telah terinspeksi dan siap menemani perjalanan Anda.
@@ -149,12 +162,14 @@
             </div>
           </div>
           <!-- Card 2 -->
-          <div onclick="window.location='/mediaDetail'" class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+          <div onclick="window.location='/mediaDetail'"
+            class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
             <div class="absolute inset-0 bg-cover bg-center"
-              style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
+              style="background-image: url('{{ asset('images/CARD-CARS-02.jpg') }}');"></div>
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative z-10 px-6 py-10">
-              <h3 class="text-whitePrimary text-xl font-bold text-center md:text-start uppercase mb-1">Jual atau Tukar Tambah</h3>
+              <h3 class="text-whitePrimary text-xl font-bold text-center md:text-start uppercase mb-1">Jual atau Tukar
+                Tambah</h3>
               <p class="text-whiteSecondary text-xs md:text-sm text-center md:text-start mb-14">
                 Dapatkan penawaran terbaik untuk mobil Anda dengan proses yang cepat, transparan, dan mudah.
               </p>
@@ -233,14 +248,14 @@
               PREMIUM WASH&nbsp;&nbsp;|&nbsp;&nbsp;DETAILING&nbsp;&nbsp;|&nbsp;&nbsp;INTERIOR
             </p>
             <p class="text-blackSecondary text-sm md:text-base text-center md:text-left mb-8">
-              Cuci kendaraan Premium dengan Sentuhan Profesional. Bikin Mobil Kinclong, Tanpa Ribet 
+              Cuci kendaraan Premium dengan Sentuhan Profesional. Bikin Mobil Kinclong, Tanpa Ribet
             </p>
             <div class="flex justify-center md:justify-start">
-              <x-button href="#Learn More" text="lihat selengkapnya" color="text" padding="" />
+              <x-button href="/wash" text="lihat selengkapnya" color="text" padding="" />
             </div>
           </div>
           <div class="w-full rounded-lg overflow-hidden ml-8 mt-8 md:mt-0">
-            <img src="{{ asset('images/car-wash.jpg') }}" alt="Good Wash"
+            <img src="{{ asset('images/CARD-CARS-03.jpg') }}" alt="Good Wash"
               class="w-full h-full object-cover rounded-lg" />
           </div>
         </div>
@@ -252,7 +267,7 @@
           <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight mb-8 md:mb-0">
             Good<br>Media
           </h2>
-          <x-button href="#Learn More" text="Lihat selengkapnya" color="text"
+          <x-button href="/media" text="Lihat selengkapnya" color="text"
             padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
         </div>
 
@@ -311,7 +326,8 @@
             </button>
             <div id="panel1" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
               aria-labelledby="accordion1">
-              Ya. Semua mobil yang kami jual telah melalui proses inspeksi menyeluruh, termasuk kondisi mesin, interior, eksterior, dan dokumen kendaraan. Kami memastikan mobil dalam keadaan siap pakai dan layak jalan.
+              Ya. Semua mobil yang kami jual telah melalui proses inspeksi menyeluruh, termasuk kondisi mesin, interior,
+              eksterior, dan dokumen kendaraan. Kami memastikan mobil dalam keadaan siap pakai dan layak jalan.
             </div>
           </div>
 
@@ -327,7 +343,8 @@
             </button>
             <div id="panel2" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
               aria-labelledby="accordion2">
-              Tentu! Kami menyediakan opsi pembayaran tunai (cash), kredit/leasing, dan tukar tambah. Tim kami siap membantu proses pengajuan kredit agar lebih mudah dan cepat
+              Tentu! Kami menyediakan opsi pembayaran tunai (cash), kredit/leasing, dan tukar tambah. Tim kami siap
+              membantu proses pengajuan kredit agar lebih mudah dan cepat
             </div>
           </div>
 
@@ -343,7 +360,8 @@
             </button>
             <div id="panel3" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
               aria-labelledby="accordion3">
-              Bisa. Kami menerima tukar tambah mobil lama Anda dengan unit yang tersedia di Good Cars. Tim kami akan membantu proses pengecekan dan penawaran harga terbaik.
+              Bisa. Kami menerima tukar tambah mobil lama Anda dengan unit yang tersedia di Good Cars. Tim kami akan
+              membantu proses pengecekan dan penawaran harga terbaik.
             </div>
           </div>
           <!-- Accordion 4 -->
@@ -358,7 +376,8 @@
             </button>
             <div id="panel4" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
               aria-labelledby="accordion2">
-              Ya. Kami menyediakan layanan towing/pengiriman mobil ke area lokal maupun luar kota sesuai kesepakatan. Biaya pengiriman akan diinformasikan terlebih dahulu.
+              Ya. Kami menyediakan layanan towing/pengiriman mobil ke area lokal maupun luar kota sesuai kesepakatan.
+              Biaya pengiriman akan diinformasikan terlebih dahulu.
             </div>
           </div>
           <!-- Accordion 5 -->
@@ -373,7 +392,8 @@
             </button>
             <div id="panel5" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
               aria-labelledby="accordion2">
-              Ya, harga masih bisa dinegosiasikan langsung sesuai kondisi unit dan kesepakatan. Jangan ragu untuk bertanya kepada tim kami untuk mendapatkan penawaran terbaik.
+              Ya, harga masih bisa dinegosiasikan langsung sesuai kondisi unit dan kesepakatan. Jangan ragu untuk bertanya
+              kepada tim kami untuk mendapatkan penawaran terbaik.
             </div>
           </div>
 

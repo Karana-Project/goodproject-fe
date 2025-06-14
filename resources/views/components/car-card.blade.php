@@ -17,7 +17,7 @@
 
       </div>
       <div class="flex-col items-center  mb-2">
-        <p class="text-xs text-gray-400 uppercase text-end">START FROM</p>
+        <p class="text-xs text-gray-400 uppercase text-end">MULAI DARI</p>
         <p class="text-red-800 font-bold text-lg md:text-xl text-end">Rp{{ number_format($price, 0, ',', '.') }}</p>
       </div>
       <div
@@ -72,7 +72,7 @@
       </div>
       <p class="text-gray-400 text-xs line-clamp-1 md:line-clamp-3">{{ $description }}</p>
       <div class="mt-3 md:mt-5 flex justify-center md:justify-end z-10">
-        <x-button href="#Learn More" text="ask this car" color="primary" size="sm"
+        <x-button href="#Learn More" text="Hubungi sekarang" color="primary" size="sm"
           class="w-full justify-between md:w-auto" />
       </div>
     </div>

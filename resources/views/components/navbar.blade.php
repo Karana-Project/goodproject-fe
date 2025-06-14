@@ -40,7 +40,7 @@
       <!-- Contact Button -->
       <a href="#contact"
         class="bg-blackPrimary text-whitePrimary rounded-full px-8 py-3 font-medium hover:bg-zinc-700 transition">
-        Contact Us
+        Hubungi Kami
       </a>
     </div>
 
@@ -67,7 +67,7 @@
         <li class="border-t border-gray-600 pt-8">
           <a href="#contact"
             class="w-full bg-whitePrimary text-blackPrimary rounded-full px-6 py-3 font-medium hover:bg-zinc-700 transition inline-block">
-            Contact Us
+            Hubungi Kami
           </a>
         </li>
       </ul>
