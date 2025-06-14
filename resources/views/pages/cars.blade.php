@@ -12,11 +12,10 @@
     <div class="relative z-20 flex items-center h-full">
       <div class="w-full max-w-screen mx-[10px] md:mx-[80px] flex md:justify-end px-6 py-6">
         <div class="text-center md:text-right w-full max-w-[1000px]">
-          <h1 class="text-whitePrimary text-4xl md:text-6xl font-bold mb-2 md:mb-4 uppercase">Where Exceptional Cars Find
-            New Owners</h1>
-          <p class="text-whitePrimary font-light text-lg md:text-xl mb-6">Buy and sell luxury vehicles with confidence and
-            ease</p>
-          <x-button href="/carCollections" text="find now" color="outline"
+          <h1 class="text-whitePrimary text-3xl md:text-6xl font-bold mb-2 md:mb-4 uppercase">Solusi Jual Beli Mobil Berkualitas, Aman dan Nyaman</h1>
+          <p class="text-whitePrimary font-light text-md md:text-xl mb-6">Mengapa Memilih Kami Pilihan Mobil, Pelanggan Puas, Tahun Pengalaman
+</p>
+          <x-button href="/carCollections" text="cari sekarang" color="outline"
             padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
         </div>
       </div>
@@ -31,7 +30,7 @@
       <div class="flex flex-col md:flex-row items-center md:items-center text-center md:text-left mt-10 px-4">
         <!-- Judul -->
         <h1 class="text-blackPrimary text-3xl md:text-4xl font-medium uppercase w-full md:w-1/3 mb-10 md:mb-0">
-          Why choose<br>us
+          Mengapa Memilih<br>Kami
         </h1>
 
 
@@ -40,22 +39,22 @@
           <!-- Card 1 -->
           <div
             class="w-full pb-4 md:pb-0 border-b border-blackPrimary sm:border-b-0 sm:border-l sm:first:border-l-0 px-8">
-            <h2 class="text-blackPrimary text-5xl md:text-[48px] md:mb-2 font-semibold">500+</h2>
-            <p class="text-blackSecondary text-sm md:text-base">Listed Post</p>
+            <h2 class="text-blackPrimary text-5xl md:text-[48px] md:mb-2 font-semibold">10+</h2>
+            <p class="text-blackSecondary text-sm md:text-base">Koleksi Mobil</p>
           </div>
 
           <!-- Card 2 -->
           <div
             class="w-full pb-4 md:pb-0 border-b border-blackPrimary sm:border-b-0 sm:border-l sm:first:border-l-0 px-8">
-            <h2 class="text-blackPrimary text-5xl md:text-[48px] md:mb-2 font-semibold">200+</h2>
-            <p class="text-blackSecondary text-sm md:text-base">Happy Customers</p>
+            <h2 class="text-blackPrimary text-5xl md:text-[48px] md:mb-2 font-semibold">50+</h2>
+            <p class="text-blackSecondary text-sm md:text-base">Pelanggan bahagia</p>
           </div>
 
           <!-- Card 3 -->
           <div
             class="w-full pb-4 md:pb-0 border-b border-blackPrimary sm:border-b-0 sm:border-l sm:first:border-l-0 px-8">
             <h2 class="text-blackPrimary text-5xl md:text-[48px] md:mb-2 font-semibold">5+</h2>
-            <p class="text-blackSecondary text-sm md:text-base">Years Experience</p>
+            <p class="text-blackSecondary text-sm md:text-base">Tahun Pengalaman</p>
           </div>
         </div>
       </div>
@@ -74,7 +73,7 @@
       <div class="w-full mt-20 md:px-4">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8 md:mb-4">
           <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-            View Our<br>Collections
+            Lihat Koleksi<br>Kami
           </h2>
           <x-button href="/carCollections" text="view all" color="text"
             padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem] mt-4" />
@@ -129,39 +128,38 @@
       <div class="w-full mt-20 md:px-4">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
           <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-            Buy or sell, we've<br>Got you covered
+            Jual Beli, Serahkan<br>Pada Kami
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <!-- Card 1 -->
-          <div class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+          <div onclick="window.location='/mediaDetail'" class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
             <div class="absolute inset-0 bg-cover bg-center"
               style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative z-10 px-6 py-10">
-              <h3 class="text-whitePrimary text-xl font-bold text-center md:text-start uppercase mb-1">Find Your Dream Car
+              <h3 class="text-whitePrimary text-xl font-bold text-center md:text-start uppercase mb-1">Temukan Mobil Impian Anda
               </h3>
               <p class="text-whiteSecondary text-xs md:text-sm text-center md:text-start mb-14">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                Jelajahi koleksi mobil terbaik kami yang telah terinspeksi dan siap menemani perjalanan Anda.
               </p>
               <div class="text-center md:text-start">
-                <x-button href="/carCollections" text="Buy Car Now" color="text" padding="" class="text-white" />
+                <x-button href="/carCollections" text="Beli Sekarang" color="text" padding="" class="text-white" />
               </div>
             </div>
           </div>
           <!-- Card 2 -->
-          <div class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+          <div onclick="window.location='/mediaDetail'" class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
             <div class="absolute inset-0 bg-cover bg-center"
               style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative z-10 px-6 py-10">
-              <h3 class="text-whitePrimary text-xl font-bold text-center md:text-start uppercase mb-1">Sell & Trade Your
-                Car</h3>
+              <h3 class="text-whitePrimary text-xl font-bold text-center md:text-start uppercase mb-1">Jual atau Tukar Tambah</h3>
               <p class="text-whiteSecondary text-xs md:text-sm text-center md:text-start mb-14">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                Dapatkan penawaran terbaik untuk mobil Anda dengan proses yang cepat, transparan, dan mudah.
               </p>
               <div class="text-center md:text-start">
-                <x-button href="#Learn More" text="Sell or Trade Now" color="text" padding=""
+                <x-button href="#Learn More" text="Jual atau tukar tambah" color="text" padding=""
                   class="text-white" />
               </div>
             </div>
@@ -172,9 +170,9 @@
         <div class="w-full mt-20 md:px-4">
           <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
             <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-              Customer<br>reviews
+              Ulasan<br>Pelanggan
             </h2>
-            <x-button href="/reviews" text="Write Review" color="text"
+            <x-button href="/reviews" text="Tulis Ulasan" color="text"
               padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem] mt-4" />
           </div>
           <!-- Swiper -->
@@ -232,14 +230,13 @@
         <div class="flex flex-col md:flex-row items-end md:justify-between md:text-left mb-8">
           <div>
             <p class="text-blackPrimary font-bold text-sm md:text-base mb-2 text-center md:text-left uppercase">
-              PREMIUM CAR WASH&nbsp;&nbsp;|&nbsp;&nbsp;DETAILING&nbsp;&nbsp;|&nbsp;&nbsp;INTERIOR
+              PREMIUM WASH&nbsp;&nbsp;|&nbsp;&nbsp;DETAILING&nbsp;&nbsp;|&nbsp;&nbsp;INTERIOR
             </p>
             <p class="text-blackSecondary text-sm md:text-base text-center md:text-left mb-8">
-              Experience top-tier car care with our premium wash and detailing services. We meticulously clean, polish,
-              and protect every inch of your vehicle—inside and out.
+              Cuci kendaraan Premium dengan Sentuhan Profesional. Bikin Mobil Kinclong, Tanpa Ribet 
             </p>
             <div class="flex justify-center md:justify-start">
-              <x-button href="#Learn More" text="Learn More" color="text" padding="" />
+              <x-button href="#Learn More" text="lihat selengkapnya" color="text" padding="" />
             </div>
           </div>
           <div class="w-full rounded-lg overflow-hidden ml-8 mt-8 md:mt-0">
@@ -255,7 +252,7 @@
           <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight mb-8 md:mb-0">
             Good<br>Media
           </h2>
-          <x-button href="#Learn More" text="learn more" color="text"
+          <x-button href="#Learn More" text="Lihat selengkapnya" color="text"
             padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
         </div>
 
@@ -306,7 +303,7 @@
           <div class="border rounded-xl shadow-md">
             <button aria-expanded="false" aria-controls="panel1" id="accordion1" onclick="toggleAccordion(this)"
               class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
-              What is Flowbite?
+              Apakah mobil yang dijual di Good Cars sudah diperiksa kondisinya?
               <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -314,7 +311,7 @@
             </button>
             <div id="panel1" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
               aria-labelledby="accordion1">
-              Flowbite is an open-source library of interactive components built on top of Tailwind CSS.
+              Ya. Semua mobil yang kami jual telah melalui proses inspeksi menyeluruh, termasuk kondisi mesin, interior, eksterior, dan dokumen kendaraan. Kami memastikan mobil dalam keadaan siap pakai dan layak jalan.
             </div>
           </div>
 
@@ -322,7 +319,7 @@
           <div class="border rounded-xl shadow-md">
             <button aria-expanded="false" aria-controls="panel2" id="accordion2" onclick="toggleAccordion(this)"
               class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
-              Why use Flowbite?
+              Apakah bisa membeli mobil secara kredit?
               <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -330,7 +327,7 @@
             </button>
             <div id="panel2" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
               aria-labelledby="accordion2">
-              It helps you build consistent UIs with accessible components.
+              Tentu! Kami menyediakan opsi pembayaran tunai (cash), kredit/leasing, dan tukar tambah. Tim kami siap membantu proses pengajuan kredit agar lebih mudah dan cepat
             </div>
           </div>
 
@@ -338,7 +335,7 @@
           <div class="border rounded-xl shadow-md">
             <button aria-expanded="false" aria-controls="panel3" id="accordion3" onclick="toggleAccordion(this)"
               class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
-              How to get started?
+              Apakah bisa tukar tambah mobil lama saya?
               <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -346,9 +343,40 @@
             </button>
             <div id="panel3" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
               aria-labelledby="accordion3">
-              You can get started by installing Tailwind CSS and Flowbite via npm or CDN.
+              Bisa. Kami menerima tukar tambah mobil lama Anda dengan unit yang tersedia di Good Cars. Tim kami akan membantu proses pengecekan dan penawaran harga terbaik.
             </div>
           </div>
+          <!-- Accordion 4 -->
+          <div class="border rounded-xl shadow-md">
+            <button aria-expanded="false" aria-controls="panel4" id="accordion4" onclick="toggleAccordion(this)"
+              class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
+              Apakah Good Cars melayani pengantaran mobil ke luar kota?
+              <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="panel4" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
+              aria-labelledby="accordion2">
+              Ya. Kami menyediakan layanan towing/pengiriman mobil ke area lokal maupun luar kota sesuai kesepakatan. Biaya pengiriman akan diinformasikan terlebih dahulu.
+            </div>
+          </div>
+          <!-- Accordion 5 -->
+          <div class="border rounded-xl shadow-md">
+            <button aria-expanded="false" aria-controls="panel5" id="accordion5" onclick="toggleAccordion(this)"
+              class="flex justify-between items-center w-full p-5 text-blackPrimary font-medium text-left bg-whitePrimary rounded-xl">
+              Apakah harga mobil bisa nego?
+              <svg class="w-5 h-5 transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="panel5" class="hidden p-5 text-blackPrimary font-base bg-whitePrimary rounded-b-xl"
+              aria-labelledby="accordion2">
+              Ya, harga masih bisa dinegosiasikan langsung sesuai kondisi unit dan kesepakatan. Jangan ragu untuk bertanya kepada tim kami untuk mendapatkan penawaran terbaik.
+            </div>
+          </div>
+
         </div>
       </div>
 

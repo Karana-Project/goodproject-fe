@@ -12,8 +12,7 @@
     <div class="relative z-20 flex items-center h-full">
       <div class="w-full max-w-screen mx-[10px] md:mx-[80px] flex md:justify-end px-6 py-6">
         <div class="text-center md:text-right w-full max-w-[1000px]">
-          <h1 class="text-whitePrimary text-4xl md:text-6xl font-bold mb-2 md:mb-4 uppercase">Kembalikan Pesona
-            Kendaraan Anda Bersama Good Wash
+          <h1 class="text-whitePrimary text-4xl md:text-6xl font-bold mb-2 md:mb-4 uppercase"> Bikin Kinclong, Tanpa Ribet
 
           </h1>
           <p class="text-whitePrimary font-light text-lg md:text-xl mb-6">Di Good Wash, kami percaya setiap
@@ -22,7 +21,7 @@
             memberikan hasil maksimal yang mengutamakan kenyamanan dan kepuasan Anda.
 
           </p>
-          <x-button href="#Learn More" text="book now" color="outline"
+          <x-button href="#Learn More" text="cuci sekarang" color="outline"
             padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem]" />
         </div>
       </div>
@@ -38,17 +37,16 @@
       <section class="w-full mt-10 md:px-4">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
           <h2 class="text-blackPrimary text-3xl md:text-4xl font-medium uppercase leading-tight">
-            Good<br>wash
+            Cuci Premium dengan<br>Sentuhan Profesional
           </h2>
         </div>
         <div class="flex flex-col md:flex-row items-end md:justify-between md:text-left mb-8">
           <div>
             <p class="text-blackPrimary font-bold text-sm md:text-base mb-2 text-center md:text-left uppercase">
-              PREMIUM CAR WASH&nbsp;&nbsp;|&nbsp;&nbsp;DETAILING&nbsp;&nbsp;|&nbsp;&nbsp;INTERIOR
+              PREMIUM WASH&nbsp;&nbsp;|&nbsp;&nbsp;DETAILING&nbsp;&nbsp;|&nbsp;&nbsp;INTERIOR
             </p>
             <p class="text-blackSecondary text-sm md:text-base text-center md:text-left mb-8">
-              Experience top-tier car care with our premium wash and detailing services. We meticulously clean, polish,
-              and protect every inch of your vehicle—inside and out.
+              Cuci kendaraan Premium dengan Sentuhan Profesional. Bikin Mobil Kinclong, Tanpa Ribet 
             </p>
             <div class="flex justify-center md:justify-start">
             </div>
@@ -63,7 +61,7 @@
       <div class="w-full mt-20 md:px-4">
         <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
           <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-            Excellence in<br>Every Wash
+            Kualitas Terbaik di<br>Setiap Layanan
           </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -73,10 +71,9 @@
               style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative z-10 px-6 py-10 text-center flex flex-col items-center justify-end h-full">
-              <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase mb-1 mt-8">Experienced & Trusted</h3>
+              <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase mb-1 mt-8">BERPENGALAMAN & TERPERCAYA</h3>
               <p class="text-whiteSecondary text-xs md:text-sm">
-                Handled by trained professionals with years of experience, ensuring careful and consistent results every
-                time.
+                Dikerjakan oleh tim profesional berpengalaman untuk menjamin hasil yang teliti dan konsisten setiap saat untukS kendaraan kesayangan anda.
               </p>
             </div>
           </div>
@@ -86,10 +83,9 @@
               style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative z-10 px-6 py-10 text-center flex flex-col items-center justify-end h-full">
-              <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase mb-1 mt-8">Experienced & Trusted</h3>
+              <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase mb-1 mt-8">KUALITAS DETAILING PREMIUM</h3>
               <p class="text-whiteSecondary text-xs md:text-sm">
-                Handled by trained professionals with years of experience, ensuring careful and consistent results every
-                time.
+                Kami menggunakan produk dan teknik terbaik untuk memulihkan serta melindungi eksterior  dan interior mobil Anda, hingga ke detail terkecil.
               </p>
             </div>
           </div>
@@ -99,10 +95,9 @@
               style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative z-10 px-6 py-10 text-center flex flex-col items-center justify-end h-full">
-              <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase mb-1 mt-8">Experienced & Trusted</h3>
+              <h3 class="text-whitePrimary text-lg md:text-xl font-bold uppercase mb-1 mt-8">PELAYANAN CEPAT & MUDAH</h3>
               <p class="text-whiteSecondary text-xs md:text-sm">
-                Handled by trained professionals with years of experience, ensuring careful and consistent results every
-                time.
+                Jadwal fleksibel dan layanan cepat adalah komitmen kami untuk kepuasan Anda, menjadikan setiap kunjungan lebih mudah dan berkesan.
               </p>
             </div>
           </div>
@@ -112,7 +107,7 @@
         <section class="w-full mt-20 md:px-4">
           <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
             <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-              Harga<br>Cuci
+              Harga<br>cuci
             </h2>
           </div>
           <div class="grid md:grid-cols-2 gap-8">
@@ -123,8 +118,7 @@
                 <div class="absolute inset-0 bg-black/70 p-6 flex flex-col justify-end text-center md:text-start">
                   <h3 class="text-whitePrimary text-2xl md:text-3xl font-bold uppercase mb-1">CUCI MOBIL</h3>
                   <p class="text-whiteSecondary text-2xs md:text-sm">Perawatan cuci standar untuk mengembalikan kilau
-                    mobil
-                    Anda dan membersihkannya dari kotoran jalanan sehari-hari.</p>
+                    mobil Anda dan membersihkannya dari kotoran jalanan sehari-hari.</p>
                 </div>
               </div>
               <div class="bg-whitePrimary px-6 py-6">
@@ -172,9 +166,7 @@
                 <img src="/images/car-wash.jpg" alt="Car Wash" class="w-full h-full object-cover" />
                 <div class="absolute inset-0 bg-black/70 p-6 flex flex-col justify-end text-center md:text-start">
                   <h3 class="text-whitePrimary text-2xl md:text-3xl font-bold uppercase mb-1">CUCI motor</h3>
-                  <p class="text-whiteSecondary text-2xs md:text-sm">Perawatan cuci standar untuk mengembalikan kilau
-                    motor
-                    Anda dan membersihkannya dari kotoran jalanan sehari-hari.</p>
+                  <p class="text-whiteSecondary text-2xs md:text-sm">Layanan cuci khusus untuk membersihkan setiap bagian motor, dari bodi hingga area mesin yang sulit dijangkau.</p>
                 </div>
               </div>
               <div class="bg-whitePrimary px-6 py-6">
@@ -238,8 +230,7 @@
                     DETAILING MOBIL
                   </h3>
                   <p class="text-whiteSecondary text-2xs md:text-xs text-center md:text-start mb-2">Perawatan lengkap
-                    untuk membersihkan dan meremajakan
-                    eksterior serta interior mobil Anda.
+                    untuk membersihkan dan meremajakan eksterior serta interior mobil Anda.
                   </p>
                 </div>
               </div>
@@ -276,8 +267,7 @@
                     POLES & COATING PREMIUM
                   </h3>
                   <p class="text-whiteSecondary text-2xs md:text-xs text-center md:text-start mb-2">Memberikan lapisan
-                    pelindung premium untuk kilau maksimal
-                    dan proteksi cat jangka panjang.
+                    pelindung premium untuk kilau maksimal dan proteksi cat jangka panjang.
 
                   </p>
                 </div>
@@ -361,7 +351,7 @@
                   DETAILING
                 </h3>
                 <p class="text-whiteSecondary text-2xs md:text-sm text-center md:text-start mb-2">
-                  Perawatan detail untuk membersihkan dan melindungi setiap komponen motor Anda secara menyeluruh.
+                  Perawatan detail untuk membersihkan dan melindungi setiap komponen kendaraan Anda secara menyeluruh.
                 </p>
               </div>
             </div>
@@ -417,36 +407,35 @@
         <div class="w-full mt-20 md:px-4">
           <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
             <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-              Choose Your<br>Car Care
+              PILIH PERAWATAN<br>kendaraan anda
             </h2>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Card 1 -->
-            <div class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+            <div onClick="window.location.href=''" class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
               <div class="absolute inset-0 bg-cover bg-center"
                 style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
               <div class="absolute inset-0 bg-black/70"></div>
               <div class="relative z-10 px-6 py-10">
-                <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">Premium Wash</h3>
+                <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">Cuci Premium</h3>
                 <p class="text-whiteSecondary text-xs mb-14">
-                  Get your car cleaned with top-tier care using gentle, pH-balanced products and spotless rinse
-                  techniques.
+                  Kendaraan Anda akan dibersihkan dengan perawatan terbaik,menggunakan produk lembut ber-pH seimbang untuk hasil bersih sempurna tanpa noda.
                 </p>
-                <x-button href="/carCollections" text="Contact now" color="text" padding=""
+                <x-button href="/carCollections" text="Hubungi Kami" color="text" padding=""
                   class="text-white" />
               </div>
             </div>
             <!-- Card 2 -->
-            <div class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
+            <div onClick="window.location.href=''" class="cursor-pointer relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200">
               <div class="absolute inset-0 bg-cover bg-center"
                 style="background-image: url('{{ asset('images/hero-images-1.jpg') }}');"></div>
               <div class="absolute inset-0 bg-black/70"></div>
               <div class="relative z-10 px-6 py-10">
-                <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">Detailing Service</h3>
+                <h3 class="text-whitePrimary text-xl font-bold uppercase mb-1">Layanan detailing</h3>
                 <p class="text-whiteSecondary text-xs mb-14">
-                  Thorough inside-out treatment including waxing, polishing, and interior cleaning.
+                  Perawatan detail untuk membersihkan dan melindungi setiap komponen kendaraan Anda secara menyeluruh.
                 </p>
-                <x-button href="#Learn More" text="Contact Now" color="text" padding="" class="text-white" />
+                <x-button href="#Learn More" text="Hubungi Kami" color="text" padding="" class="text-white" />
               </div>
             </div>
           </div>
@@ -455,7 +444,7 @@
           <section class="w-full mt-20 md:px-4">
             <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
               <h2 class="text-blackPrimary text-3xl md:text-4xl font-medium uppercase leading-tight">
-                Your Car’s Clean<br>Destination
+                Temukan<br>Kami
               </h2>
             </div>
             <div class="flex flex-col md:flex-row items-end md:justify-between md:text-left mb-8">
@@ -464,8 +453,7 @@
                   jl. tukad badung no.166x, renon, denpasar
                 </p>
                 <p class="text-blackSecondary text-sm md:text-base text-center md:text-left mb-10 md:mb-0">
-                  Locate our premium car wash and detailing center with ease. We're just a tap away from spotless,
-                  showroom-quality results and exceptional care for your vehicle.
+                  Temukan pusat cuci dan detailing premium kami dengan mudah. Hanya satu sentuhan untuk hasil sekelas showroom dan perawatan terbaik untuk kendaraan Anda.
                 </p>
                 <div class="flex justify-center md:justify-start">
                 </div>
@@ -483,9 +471,9 @@
           <div class="w-full mt-20 md:px-4">
             <div class="flex flex-col md:flex-row items-center md:justify-between text-center md:text-left mb-8">
               <h2 class="text-black text-3xl md:text-4xl font-medium uppercase leading-tight">
-                Customer<br>reviews
+                Ulasan<br>Pelanggan
               </h2>
-              <x-button href="/reviews" text="Write Review" color="text"
+              <x-button href="/reviews" text="Tulis Ulasan" color="text"
                 padding="py-[0.5rem] px-[1rem] md:py-[1rem] md:px-[2rem] mt-4" />
             </div>
             <!-- Swiper -->

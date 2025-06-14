@@ -290,10 +290,19 @@
             <!-- Detail Sidebar -->
             <aside class="hidden md:block md:col-span-1">
               <div class="sticky top-8 bg-white p-4 rounded-2xl shadow">
-                <h2 class="text-xl text-blackPrimary font-bold uppercase">PORSCHE 911</h2>
+                <div class="flex items-center justify-between border-b border-whiteSecondary first:border-l-0 pb-3 mb-4">
+                  <div>
+                  <h2 class="text-xl text-blackPrimary font-bold uppercase">PORSCHE 911</h2>
                 <p
-                  class="text-blackSecondary text-xs uppercase border-b border-whiteSecondary first:border-l-0 pb-3 mb-4">
+                  class="text-blackSecondary text-xs uppercase">
                   {{ $brand ?? 'PORSCHE' }}</p>
+                  </div>
+                  <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+                  </svg>
+                  </a>  
+                    </div>
                 <div
                   class="grid grid-cols-2 gap-y-2 gap-x-4 justify-between text-blackSecondary text-xs border-b border-whiteSecondary pb-4 mb-4">
                   <div class="flex items-center space-x-1">

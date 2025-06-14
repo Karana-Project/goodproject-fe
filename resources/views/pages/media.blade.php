@@ -42,7 +42,7 @@
         </div>
         <div class="flex flex-col md:flex-row gap-4">
           <!-- Kotak besar kiri -->
-          <div class="w-full md:w-2/3 h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-md">
+          <div onclick="window.location='/mediaDetail'" class="cursor-pointer w-full md:w-2/3 h-[300px] md:h-[400px] rounded-xl overflow-hidden shadow-md">
             <div
               class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 h-full">
               <div class="absolute inset-0 bg-cover bg-center"
@@ -64,7 +64,7 @@
           <!-- Dua kotak kecil kanan -->
           <div class="w-full md:w-1/3 flex flex-col gap-4">
             <!-- Thumbnail 1 -->
-            <div class="h-[140px] md:h-[190px] rounded-xl overflow-hidden shadow-md">
+            <div onclick="window.location='/mediaDetail'" class="cursor-pointer h-[140px] md:h-[190px] rounded-xl overflow-hidden shadow-md">
               <div
                 class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 h-full">
                 <div class="absolute inset-0 bg-cover bg-center"
@@ -82,7 +82,7 @@
               </div>
             </div>
             <!-- Thumbnail 2 -->
-            <div class="h-[140px] md:h-[190px] rounded-xl overflow-hidden shadow-md">
+            <div onclick="window.location='/mediaDetail'" class="cursor-pointer h-[140px] md:h-[190px] rounded-xl overflow-hidden shadow-md">
               <div
                 class="relative rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-200 h-full">
                 <div class="absolute inset-0 bg-cover bg-center"

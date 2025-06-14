@@ -2,8 +2,20 @@
   <a href="/carDetail" class="block">
     <img src="{{ $image }}" alt="{{ $name }}" class="w-full h-48 object-cover rounded-t-lg">
     <div class="p-4">
-      <h3 class="text-lg font-bold text-black uppercase">{{ $name }}</h3>
-      <p class="text-gray-500 text-xs uppercase mb-1">{{ $brand ?? 'PORSCHE' }}</p>
+      <div class="flex items-center justify-between mb-2">
+        <div>
+          <h3 class="text-lg font-bold text-black uppercase">{{ $name }}</h3>
+          <p class="text-gray-500 text-xs uppercase mb-1">{{ $brand ?? 'PORSCHE' }}</p>
+        </div>
+        <a href="">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black"
+            class="size-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+          </svg>
+        </a>
+
+      </div>
       <div class="flex-col items-center  mb-2">
         <p class="text-xs text-gray-400 uppercase text-end">START FROM</p>
         <p class="text-red-800 font-bold text-lg md:text-xl text-end">Rp{{ number_format($price, 0, ',', '.') }}</p>
